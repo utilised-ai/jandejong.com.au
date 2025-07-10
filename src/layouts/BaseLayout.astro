@@ -1,0 +1,73 @@
+---
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Perth Martial Arts | Ju Jutsu, Aikido, and Weapons Training' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{title} | Jan de Jong Martial Arts</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+  <Header />
+  <main>
+    <slot />
+  </main>
+  <footer class="bg-secondary text-white py-12">
+    <div class="container-width">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl mb-4">Opening Hours</h3>
+          <p>Monday-Friday: 6am to 9pm</p>
+          <p>Saturday-Sunday: 10am to 5pm</p>
+        </div>
+        <div>
+          <h3 class="text-xl mb-4">Contact Us</h3>
+          <p><a href="tel:0427970481" class="hover:text-primary">0427970481</a></p>
+          <p><a href="mailto:info@jandejong.com.au" class="hover:text-primary">info@jandejong.com.au</a></p>
+        </div>
+        <div>
+          <h3 class="text-xl mb-4">Classes</h3>
+          <div class="space-y-1 text-sm">
+            <div><a href="/ju-jutsu" class="hover:text-primary">Ju Jutsu (Adult & Kids)</a></div>
+            <div><a href="/aikido-perth" class="hover:text-primary">Aikido</a></div>
+            <div><a href="/tai-chi" class="hover:text-primary">Tai Chi</a></div>
+            <div><a href="/self-defence" class="hover:text-primary">Self Defence for Women</a></div>
+            <div><a href="/self-protection" class="hover:text-primary">Self-Protection</a></div>
+            <div><a href="/sword-training" class="hover:text-primary">Sword Training</a></div>
+            <div><a href="/personal-training" class="hover:text-primary">Personal Training</a></div>
+            <div><a href="/corporate-training" class="hover:text-primary">Corporate Training</a></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl mb-4">Follow Us</h3>
+          <div class="flex gap-4 mb-4">
+            <a href="#" class="hover:text-primary">Facebook</a>
+            <a href="#" class="hover:text-primary">Instagram</a>
+          </div>
+          <div class="space-y-1 text-sm">
+            <div><a href="/membership" class="hover:text-primary">Membership</a></div>
+            <div><a href="/free-trial" class="hover:text-primary">Free Trial</a></div>
+            <div><a href="/timetable" class="hover:text-primary">Timetable</a></div>
+            <div><a href="/history" class="hover:text-primary">Our History</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+        <p>&copy; 2024 Jan de Jong Martial Arts Fitness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

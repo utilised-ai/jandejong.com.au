@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Our Experience">
+  <Hero
+    title="Our Experience"
+    subtitle="Decades of martial arts expertise and proven results"
+    backgroundImage="/images/experience-hero.jpg"
+    ctaText="Experience Our Training"
+    ctaLink="/free-trial"
+  />
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>Instructors Acclaimed for Excellence</h2>
+        <p>
+          Instructors at Jan de Jong Martial Arts Fitness are acclaimed for their high level of 
+          technical knowledge and teaching ability and their ongoing commitment to developing 
+          skill sets and training methods. Our team brings decades of combined experience in 
+          martial arts instruction and real-world application.
+        </p>
+        
+        <h2>Paul Connolly Sensei</h2>
+        <p>
+          Paul Sensei brings extensive experience in Ju Jutsu, Aikido, and traditional weapons 
+          training. Known for his technical precision and ability to adapt teaching methods to 
+          individual student needs, Paul has been instrumental in developing many of our current 
+          training programs and methodologies.
+        </p>
+        
+        <h2>Maggie Sensei</h2>
+        <p>
+          Maggie Sensei specializes in working with children and women's self-defence programs. 
+          Her patience, skill, and natural teaching ability have made her particularly effective 
+          in developing confidence and skills in students of all ages. She has a special talent 
+          for working with children on the autism spectrum and those with special needs.
+        </p>
+        
+        <h2>Proven Track Record</h2>
+        <p>
+          Our instructors have successfully trained thousands of students over the decades, 
+          from complete beginners to advanced practitioners. Many of our students have gone 
+          on to become instructors themselves, spreading the Jan de Jong methodology throughout 
+          Australia and internationally.
+        </p>
+        
+        <h2>Continuous Professional Development</h2>
+        <p>
+          We believe in continuous learning and improvement. Our instructors regularly attend 
+          seminars, workshops, and training sessions to stay current with the latest developments 
+          in martial arts and teaching methodologies. This commitment to ongoing education ensures 
+          that our students receive the most effective and up-to-date instruction possible.
+        </p>
+        
+        <h2>Specialized Training Programs</h2>
+        <p>
+          Our experience extends beyond traditional martial arts classes. We have successfully 
+          developed and delivered specialized programs for healthcare workers, security personnel, 
+          corporate teams, and law enforcement agencies. Each program is carefully tailored to 
+          meet the specific needs and challenges of the target audience.
+        </p>
+        
+        <h2>Recognition and Testimonials</h2>
+        <p>
+          The quality of our instruction is reflected in the feedback we receive from students, 
+          parents, and organizations we work with. Our programs have been recognized for their 
+          effectiveness, professionalism, and positive impact on participants' lives.
+        </p>
+      </div>
+      
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">Experience the Difference</h2>
+        <p class="text-lg mb-6">
+          Join thousands of satisfied students who have benefited from our experienced, 
+          professional instruction. Discover what makes Jan de Jong Martial Arts Fitness 
+          Perth's premier martial arts school.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <Button href="/free-trial">Book Free Trial</Button>
+          <Button href="/about" type="secondary">Learn More About Us</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Specialised Training - Jan de Jong Martial Arts Fitness Perth | Professional Training Solutions" description="Specialised Training at Jan de Jong Martial Arts Fitness Perth. Tailored training for police, security, mine site controllers, journalists, nurses & professional groups.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/specialised-training-img.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Specialised Training</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>Specialised Training</h2>
+        
+        <p>
+          Ideal for specialised professions such as police, security officers, mine site controllers, journalists, nurses or any other groups or individuals requiring specific training objectives.
+        </p>
+        
+        <p>
+          Whether it is a 'one on one' lesson or group sessions, this is a great way to meet your personal or company requirements. You choose the art that best suits you, with our help we will ensure you meet your goals.
+        </p>
+        
+        <p>
+          This is your opportunity to drill down to what it is you wish to achieve. If you have never done a class with us previously it might be an opportunity to get all of those questions answered. Maybe you have been away and want a refresher. Whatever your reasons just ask us and we will be glad to assist.
+        </p>
+      </div>
+      
+      <!-- Book Free Trial Section -->
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

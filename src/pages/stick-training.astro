@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Stick Training - Jan de Jong Martial Arts Fitness Perth | Jo, Tanbo & Bo Training" description="Stick Training at Jan de Jong Martial Arts Fitness Perth. Learn Jo (4ft stick), Tanbo (forearm stick), and Bo (6ft stick) techniques. Traditional weapon training for all levels.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/stick-training-img.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Stick Training</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>Stick Training</h2>
+        
+        <p>
+          There are stories of armed samurai being defeated by peasants with a jo (150cm stick). These are weapons not to be under-estimated. The aim of the stick training is to show the uses, versatility, advantages and limitations.
+        </p>
+        
+        <p>
+          The TANBO, a stick that is of a suitable length based on the length of the practitioner's forearm, approximately 40 to 55cm on average, is the most usable, adaptable and concealable weapon.
+        </p>
+        
+        <p>
+          The JO 4′ 150cm stick again offering versatility but now with the added safety of distance from your opponent. It can be handled with quick dexterity and is used in many different ways in self defence techniques. JO techniques have the added advantage of being able to be performed with a household item such as a broom or rake.
+        </p>
+        
+        <p>
+          The BO, 6′ or 180cm stick, affords protection over the greatest distance. Being the least concealable it does not have the element of surprise in its use. It has the ability to reach opponents and to keep them at bay, although its maneuverability is considerably less than the JO.
+        </p>
+        
+        <p>
+          Stick training lessons focus on the use of the "JO" [4ft stick] and "TANBO" techniques. The extremely efficient self defence use of these weapons is often overlooked in many martial arts. Stick lessons are directed to people of all levels.
+        </p>
+      </div>
+      
+      <!-- Book Free Trial Section -->
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

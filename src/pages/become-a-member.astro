@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Become a Member - Jan de Jong Martial Arts Fitness Perth | Join Today" description="Become a member at Jan de Jong Martial Arts Fitness Perth. Select membership type, book classes, complete application. Contact us at 9321 8685 for assistance.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/history-img-1.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Become a Member</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>Become a Member</h2>
+        
+        <h3>1. Select a type of membership, series or package by logging on with a username and password.</h3>
+        
+        <p>
+          <em>If you would like assistance in selecting the appropriate classes and the type of Membership, Series or Package that would suit you best you can contact us at the Perth office 9321 8685 <strong><a href="mailto:info@jandejong.com.au">info@jandejong.com.au</a></strong> and/or make an appointment to meet with an instructor.</em>
+        </p>
+        
+        <h3>2. Book the classes you would like to attend.</h3>
+        
+        <h3>3. Down load and complete the Application for Enrolment – this should be handed in before your first lesson.</h3>
+        
+        <h3>4. Coming to classes – see the contact page for how to find us.</h3>
+        
+        <p>Arrive at least 15 minutes prior to your first lesson.</p>
+        
+        <p>
+          Shower and change room facilities are available, uniforms can be purchased at the Perth dojo prior to your first lesson, otherwise suitable easy to move in clothing should be worn. Bring a towel and a water bottle. You can order uniforms from Perth dojo for the Melville Rec Centre classes.
+        </p>
+        
+        <p>
+          Read the contact page to know how to find us. If you have questions please contact the Perth office on 9321 8685.
+        </p>
+        
+        <div class="text-center my-8">
+          <Button href="/timetable">signup now</Button>
+        </div>
+      </div>
+      
+      <!-- Book Free Trial Section -->
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

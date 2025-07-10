@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="About Us - Jan de Jong Martial Arts Fitness Perth | Expert Martial Arts Instruction Since 1952" description="Learn about Jan de Jong Martial Arts Fitness Perth. Expert instructors with 40+ years experience teaching self defence, Ju Jutsu, Aikido since 1952. Quality instruction in positive atmosphere.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/philosophy-img.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">About Us</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>OUR PHILOSOPHY</h2>
+        <p>
+          Instructors at Jan de Jong Martial Arts Fitness are acclaimed for their high level of technical knowledge and teaching ability. Jan de Jong Martial Arts Fitness commenced teaching at colleges and schools in Perth over 40 years ago. All classes are conducted in a positive, friendly atmosphere of cooperation, not competition. All students are encouraged to support and help each other, ensuring an enjoyable and fruitful learning experience. Jan de Jong Martial Arts Fitness has taught self defence in Perth since 1952. All instructors are students of, and have graded in, Jan de Jong Martial Arts, and have many years of experience up to more than 40 years. Our aim is to equip students to go about their daily life with quiet confidence knowing that they have efficient skills to protect themselves should the need arise.
+        </p>
+        
+        <h2>WHY TRAIN WITH JAN DE JONG?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 not-prose mb-8">
+          <div class="text-center">
+            <img src="/images/quality-instruction.png" alt="Quality Instruction" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-xl font-heading uppercase mb-2">QUALITY INSTRUCTION</h3>
+            <p>Instructors at Jan de Jong Martial Arts Fitness are acclaimed for their high level of technical knowledge and teaching ability. Jan de Jong Martial Arts Fitness has taught self defence in Perth since 1952. We are invested in your journey.</p>
+          </div>
+          
+          <div class="text-center">
+            <img src="/images/high-intensity-icon.png" alt="High Intensity" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-xl font-heading uppercase mb-2">HIGH INTENSITY</h3>
+            <p>Dynamic training sessions that challenge both body and mind while maintaining safety and proper technique development.</p>
+          </div>
+          
+          <div class="text-center">
+            <img src="/images/broad-and-inclusive-icon.png" alt="Broad and Inclusive" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-xl font-heading uppercase mb-2">BROAD AND INCLUSIVE</h3>
+            <p>Welcoming environment for students of all ages, backgrounds, and abilities. Everyone is encouraged to learn and grow together.</p>
+          </div>
+          
+          <div class="text-center">
+            <img src="/images/improves-health-icon.png" alt="Improves Health" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-xl font-heading uppercase mb-2">IMPROVES HEALTH</h3>
+            <p>Physical fitness, mental wellbeing, and self-confidence all improve through regular martial arts practice.</p>
+          </div>
+        </div>
+        
+        <h2>MEET YOUR INSTRUCTORS</h2>
+        <p>
+          Instructors at Jan de Jong Martial Arts Fitness are acclaimed for their high level of technical knowledge and teaching ability. Jan de Jong Martial Arts Fitness commenced teaching at colleges and schools in Perth over 40 years ago. All classes are conducted in a positive, friendly atmosphere of cooperation, not competition. All students are encouraged to support and help each other, ensuring an enjoyable and fruitful learning experience. Jan de Jong Martial Arts Fitness has taught self defence in Perth since 1952. All instructors are students of, and have graded in, Jan de Jong Martial Arts, and have many years of experience up to more than 40 years. Our aim is to equip students to go about their daily life with quiet confidence knowing that they have efficient skills to protect themselves should the need arise.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 not-prose my-12">
+          <div class="text-center">
+            <img src="/images/maggie-de-jong-scaled.jpg" alt="Maggie de Jong" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-heading uppercase mb-2">MAGGIE DE JONG</h3>
+            <h4 class="text-lg font-semibold text-primary">Owner / Instructor</h4>
+          </div>
+          
+          <div class="text-center">
+            <img src="/images/paul-connoly-scaled.jpg" alt="Paul Connolly" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-heading uppercase mb-2">PAUL CONNOLLY</h3>
+            <h4 class="text-lg font-semibold text-primary">Instructor</h4>
+          </div>
+          
+          <div class="text-center">
+            <img src="/images/daryl-cook-scaled.jpg" alt="Daryl Cook" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+            <h3 class="text-xl font-heading uppercase mb-2">DARYL COOK</h3>
+            <h4 class="text-lg font-semibold text-primary">Instructor</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

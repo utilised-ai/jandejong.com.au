@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Events">
+  <Hero
+    title="Events"
+    subtitle="Special workshops, demonstrations, and community activities"
+    backgroundImage="/images/events-hero.jpg"
+    ctaText="Join an Event"
+    ctaLink="/contact"
+  />
+  
+  <section class="section-padding">
+    <div class="container-width">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl mb-4">Upcoming Events</h2>
+        <p class="text-lg">Stay connected with our martial arts community through special events and workshops</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white rounded shadow-card overflow-hidden">
+          <img src="/images/workshop-demo.jpg" alt="Self-defence workshop" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="text-sm text-primary font-semibold mb-2">WORKSHOP</div>
+            <h3 class="text-xl font-heading uppercase mb-2">Women's Self-Defence Workshop</h3>
+            <p class="text-gray-600 mb-4">Intensive weekend workshop covering essential self-defence skills for women.</p>
+            <div class="text-sm text-gray-500 mb-4">
+              <p>📅 Next workshop dates TBA</p>
+              <p>⏰ 9:00 AM - 4:00 PM</p>
+              <p>📍 Jan de Jong Dojo</p>
+            </div>
+            <Button href="/contact" class="w-full">Register Interest</Button>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded shadow-card overflow-hidden">
+          <img src="/images/grading-ceremony.jpg" alt="Belt grading ceremony" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="text-sm text-primary font-semibold mb-2">GRADING</div>
+            <h3 class="text-xl font-heading uppercase mb-2">Belt Grading Ceremony</h3>
+            <p class="text-gray-600 mb-4">Quarterly grading sessions for students ready to advance to their next belt level.</p>
+            <div class="text-sm text-gray-500 mb-4">
+              <p>📅 Quarterly (dates announced in class)</p>
+              <p>⏰ Times vary by level</p>
+              <p>📍 Jan de Jong Dojo</p>
+            </div>
+            <Button href="/contact" class="w-full">Learn About Gradings</Button>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded shadow-card overflow-hidden">
+          <img src="/images/demonstration.jpg" alt="Martial arts demonstration" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="text-sm text-primary font-semibold mb-2">DEMONSTRATION</div>
+            <h3 class="text-xl font-heading uppercase mb-2">Public Demonstration</h3>
+            <p class="text-gray-600 mb-4">Watch our students demonstrate traditional and modern martial arts techniques.</p>
+            <div class="text-sm text-gray-500 mb-4">
+              <p>📅 Community events throughout the year</p>
+              <p>⏰ Various times</p>
+              <p>📍 Various Perth locations</p>
+            </div>
+            <Button href="/contact" class="w-full">Request Demo</Button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-12">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">Types of Events We Host</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-accent p-6 rounded">
+            <h3 class="text-xl font-heading uppercase mb-4">Workshops & Seminars</h3>
+            <ul class="space-y-2">
+              <li>• Women's self-defence intensives</li>
+              <li>• Children's holiday programs</li>
+              <li>• Advanced technique workshops</li>
+              <li>• Guest instructor seminars</li>
+              <li>• Corporate team building sessions</li>
+            </ul>
+          </div>
+          
+          <div class="bg-accent p-6 rounded">
+            <h3 class="text-xl font-heading uppercase mb-4">Community Events</h3>
+            <ul class="space-y-2">
+              <li>• Public demonstrations</li>
+              <li>• School visit programs</li>
+              <li>• Community festival participation</li>
+              <li>• Charity fundraising events</li>
+              <li>• Open house tours</li>
+            </ul>
+          </div>
+          
+          <div class="bg-accent p-6 rounded">
+            <h3 class="text-xl font-heading uppercase mb-4">Student Activities</h3>
+            <ul class="space-y-2">
+              <li>• Belt grading ceremonies</li>
+              <li>• Annual student gatherings</li>
+              <li>• Training camps and intensives</li>
+              <li>• Student vs instructor challenges</li>
+              <li>• Achievement celebrations</li>
+            </ul>
+          </div>
+          
+          <div class="bg-accent p-6 rounded">
+            <h3 class="text-xl font-heading uppercase mb-4">Special Programs</h3>
+            <ul class="space-y-2">
+              <li>• School holiday programs</li>
+              <li>• Parent and child classes</li>
+              <li>• Senior citizens programs</li>
+              <li>• Adaptive martial arts sessions</li>
+              <li>• First aid and safety workshops</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center bg-white p-8 rounded shadow-card">
+        <h2 class="text-3xl md:text-4xl mb-4">Stay Informed</h2>
+        <p class="text-lg mb-6">
+          Want to be notified about upcoming events? Contact us to join our mailing list 
+          or follow us on social media for the latest updates on workshops, demonstrations, 
+          and special programs.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <Button href="/contact">Get Event Updates</Button>
+          <Button href="/free-trial" type="secondary">Try a Class First</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

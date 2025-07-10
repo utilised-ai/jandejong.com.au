@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Jan de Jong Martial Arts & Fitness Perth - Australia's First Professional Dojo Since 1952" description="Learn martial arts in Perth at Australia's first fulltime professional dojo since 1952. Expert instruction in Ju Jutsu, Aikido, Tai Chi. Book your free trial today.">
+  <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/hero-bg.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-6 drop-shadow-lg">
+        AUSTRALIA'S FIRST FULLTIME <strong>PROFESSIONAL DOJO</strong> SINCE 1952.
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 drop-shadow-lg">
+        Instructors at Jan de Jong Martial Arts Fitness are acclaimed for their high level of technical knowledge and teaching ability and their ongoing commit to developing skill sets and training methods.
+      </p>
+      <Button href="/free-trial" class="text-lg px-8 py-4">FREE TRIAL</Button>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        <div class="text-center">
+          <img src="/images/jujutsu-icon.png" alt="Ju Jutsu icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-heading uppercase mb-4">JU JUTSU</h3>
+          <p class="text-lg">
+            Ju Jutsu is the ancient Japanese art of self-defence used by the Samurai in feudal Japan. Jan de Jong Ju Jutsu is a comprehensive, current and practical system of self-defence which can be described as an unarmed self-defence system that can be applied against armed or unarmed assailants. The range of techniques is vast and the combinations and variations are endless.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <img src="/images/aikido-icon.png" alt="Aikido icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-heading uppercase mb-4">AIKIDO</h3>
+          <p class="text-lg">
+            Aikido at Jan de Jong Martial Arts Fitness places an emphasis on the smooth, flowing and circular movements that are typical of Aikido with a very dynamic and practical application. We recognise the need to offer solutions against the more common attacks such as punches, kicks and weapons. We are proud to offer a balance that recognises measured and reasonable responses to any given situation within the principles of traditional Aikido.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <img src="/images/corporate-groups-icon.png" alt="Corporate groups icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-heading uppercase mb-4">SPECIALISED & CORPORATE GROUPS</h3>
+          <p class="text-lg">
+            Ideal for professions such as police, security officers, mine site controllers, journalists, nurses or any other groups or individuals requiring specific training outcomes.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <img src="/images/personal-training-icon.png" alt="Personal training icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-heading uppercase mb-4">PERSONAL TRAINING</h3>
+          <p class="text-lg">
+            Personal Training Lessons will develop a greater feeling of self confidence and basic expertise before entering a group class. Students may take the option to have Personal Training Lessons at anytime particularly leading up to a grading.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl mb-6">WHAT WE TEACH</h2>
+        <p class="text-lg mb-8 max-w-3xl mx-auto">
+          All classes are conducted in a positive, friendly atmosphere of cooperation, not competition. All students are encouraged to support and help each other, ensuring an enjoyable and fruitful learning experience.
+        </p>
+        <Button href="/about">ABOUT US</Button>
+      </div>
+      
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">OUR CLASSES</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+          <div><a href="/ju-jutsu" class="text-primary hover:underline">Ju Jutsu (Adult & Kids)</a></div>
+          <div><a href="/aikido-perth" class="text-primary hover:underline">Aikido</a></div>
+          <div><a href="/tai-chi" class="text-primary hover:underline">Tai Chi</a></div>
+          <div><a href="/specialised-training" class="text-primary hover:underline">Specialised Training</a></div>
+          <div><a href="/stick-training" class="text-primary hover:underline">Stick Training</a></div>
+          <div><a href="/sword-training" class="text-primary hover:underline">Sword Training</a></div>
+          <div><a href="/self-defence" class="text-primary hover:underline">Self Defence for Women</a></div>
+          <div><a href="/self-protection" class="text-primary hover:underline">Self-Protection for Men & Women</a></div>
+          <div><a href="/personal-training" class="text-primary hover:underline">Personal Training</a></div>
+          <div><a href="/corporate-training" class="text-primary hover:underline">Corporate Training</a></div>
+          <div><a href="/security-training" class="text-primary hover:underline">Security Industry</a></div>
+        </div>
+        <div class="text-center mt-8">
+          <Button href="/classes">View All Classes</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-padding bg-accent">
+    <div class="container-width">
+      <h2 class="text-3xl md:text-4xl text-center mb-8">CHOOSE A MEMBERSHIP THAT SUITS YOU</h2>
+      <p class="text-center text-lg mb-12">
+        Memberships are purchased online or in the dojo as either pre-paid or subscription options. There are separate memberships for adults, students, and children.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white p-8 rounded shadow-card text-center">
+          <h3 class="text-2xl font-heading mb-2">$30/ Week</h3>
+          <h4 class="text-xl font-semibold mb-4">Adult Membership</h4>
+          <p class="mb-6">
+            Memberships for adults start at $30 a week, depending on how many classes you want and if you join a 12-month or pre-paid option.
+          </p>
+          <Button href="/timetable">See More</Button>
+        </div>
+        
+        <div class="bg-white p-8 rounded shadow-card text-center">
+          <h3 class="text-2xl font-heading mb-2">$28/ Week</h3>
+          <h4 class="text-xl font-semibold mb-4">Children's Membership</h4>
+          <p class="mb-6">
+            Memberships for children start at $28 a week, depending on how many classes you want and if you join a 12-month or pre-paid option.
+          </p>
+          <Button href="/timetable">See More</Button>
+        </div>
+        
+        <div class="bg-white p-8 rounded shadow-card text-center">
+          <h3 class="text-2xl font-heading mb-2">$22/ Week</h3>
+          <h4 class="text-xl font-semibold mb-4">Flexible Membership</h4>
+          <p class="mb-6">
+            If you're looking for some flexibility with your classes, or even an unlimited option, fees start as low as $22 per week.
+          </p>
+          <Button href="/timetable">See More</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width text-center">
+      <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+      <p class="text-lg mb-8">
+        Memberships are purchased online or in the dojo as either pre-paid or subscription options. There are separate memberships for adults, students, and children.
+      </p>
+      <Button href="/free-trial">Free Trial</Button>
+    </div>
+  </section>
+  
+  <section class="section-padding bg-gray-50">
+    <div class="container-width">
+      <h2 class="text-3xl md:text-4xl text-center mb-12">WHAT OUR STUDENTS SAY</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow-card">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Scott Barret</h4>
+              <div class="text-yellow-400">★★★★★</div>
+            </div>
+          </div>
+          <p class="text-sm">
+            "I walked in the door of the Jan de Jong dojo looking for a martial art that could help me practice mindfulness. The Jan de Jong dojo community that Maggie Sensei and Paul Sensei have gathered around them is welcoming and inclusive and every time I walk through that door I know I am in the right place."
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded shadow-card">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Linda</h4>
+              <div class="text-yellow-400">★★★★★</div>
+            </div>
+          </div>
+          <p class="text-sm">
+            "Thank you, Maggie, for running a fantastic self-defence course for girls over the school holidays. My girls were at first very reluctant, but after I convinced them to join the course, they now agree that it was both worthwhile and enjoyable."
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded shadow-card">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Greg</h4>
+              <div class="text-yellow-400">★★★★★</div>
+            </div>
+          </div>
+          <p class="text-sm">
+            "I started training in self defence mid 2002 with Jan de Jong Martial Arts Fitness. Two of the main reasons I chose to train at Jan de Jong Martial Arts Fitness was its well respected reputation and the high level of martial arts knowledge displayed by its instructors."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

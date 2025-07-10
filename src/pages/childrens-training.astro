@@ -1,0 +1,250 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Button from '../components/Button.astro';
+import ImageGallery from '../components/ImageGallery.astro';
+
+const galleryImages = [
+  { src: '/images/kids-training1.jpg', alt: 'Children practicing martial arts' },
+  { src: '/images/kids-training2.jpg', alt: 'Kids learning self-defense' },
+  { src: '/images/kids-training3.jpg', alt: 'Children martial arts class' },
+];
+---
+
+<BaseLayout title="Children's Training">
+  <Hero
+    title="Children's Martial Arts"
+    subtitle="Building confidence, discipline, and self-defence skills for children"
+    backgroundImage="/images/kids-hero.jpg"
+    ctaText="Book Free Trial"
+    ctaLink="/free-trial"
+  />
+  
+  <section class="section-padding">
+    <div class="container-width">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-6">Why Martial Arts for Kids?</h2>
+          <p class="text-lg mb-6">
+            Our children's martial arts program is designed to help kids develop physically, 
+            mentally, and emotionally. Through structured training, games, and positive 
+            reinforcement, children learn valuable life skills while having fun.
+          </p>
+          <p class="mb-6">
+            We focus on building character, teaching respect, and developing self-confidence 
+            in a safe, supportive environment. Our qualified instructors specialize in 
+            working with children and understand how to make learning engaging and age-appropriate.
+          </p>
+          <Button href="/free-trial">Book a Trial Class</Button>
+        </div>
+        <div>
+          <img src="/images/kids-demonstration.jpg" alt="Children's martial arts demonstration" class="rounded shadow-card">
+        </div>
+      </div>
+      
+      <div class="mb-12">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">Age Groups & Programs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded shadow-card overflow-hidden">
+            <div class="bg-primary text-white p-4">
+              <h3 class="text-xl font-heading uppercase">Little Samurai</h3>
+              <p class="text-sm">Ages 5-8</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-2 mb-4">
+                <li>✓ Basic movements and coordination</li>
+                <li>✓ Following instructions and discipline</li>
+                <li>✓ Simple self-defense concepts</li>
+                <li>✓ Games and fun activities</li>
+                <li>✓ Respect and good manners</li>
+              </ul>
+              <p class="text-sm text-gray-600">Focus on play-based learning and character development</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded shadow-card overflow-hidden">
+            <div class="bg-primary text-white p-4">
+              <h3 class="text-xl font-heading uppercase">Youth Program</h3>
+              <p class="text-sm">Ages 9-15</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-2 mb-4">
+                <li>✓ Structured martial arts techniques</li>
+                <li>✓ Anti-bullying strategies</li>
+                <li>✓ Physical fitness and coordination</li>
+                <li>✓ Goal setting and achievement</li>
+                <li>✓ Leadership development</li>
+              </ul>
+              <p class="text-sm text-gray-600">More structured training with real-world applications</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded shadow-card overflow-hidden">
+            <div class="bg-primary text-white p-4">
+              <h3 class="text-xl font-heading uppercase">Teen Program</h3>
+              <p class="text-sm">Ages 16-17</p>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-2 mb-4">
+                <li>✓ Advanced self-defense skills</li>
+                <li>✓ Confidence in challenging situations</li>
+                <li>✓ Transition to adult classes</li>
+                <li>✓ Leadership and mentoring roles</li>
+                <li>✓ Life skills integration</li>
+              </ul>
+              <p class="text-sm text-gray-600">Bridge to adult training with age-appropriate focus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-12">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">Benefits for Children</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">💪</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Physical Fitness</h3>
+            <p>Improve strength, flexibility, coordination, and overall physical health</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">🛡️</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Self-Defense</h3>
+            <p>Learn practical skills to protect themselves and handle challenging situations</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">🧠</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Mental Focus</h3>
+            <p>Develop concentration, discipline, and the ability to follow instructions</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">😊</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Confidence</h3>
+            <p>Build self-esteem and confidence through achievement and skill development</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">🤝</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Social Skills</h3>
+            <p>Learn teamwork, respect for others, and how to make positive friendships</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">📚</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Academic Performance</h3>
+            <p>Improved focus and discipline often translates to better school performance</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">🎯</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Goal Setting</h3>
+            <p>Learn to set goals and work systematically toward achieving them</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">🏆</span>
+            </div>
+            <h3 class="text-xl font-heading uppercase mb-2">Character Building</h3>
+            <p>Develop integrity, perseverance, and respect for themselves and others</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-6">Anti-Bullying Program</h2>
+          <p class="mb-4">
+            Our specialized anti-bullying program teaches children practical strategies 
+            for dealing with bullying situations, both physical and verbal.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <div class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</div>
+              <div>
+                <h4 class="font-semibold">Recognition</h4>
+                <p class="text-sm text-gray-600">Identify different types of bullying and inappropriate behavior</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</div>
+              <div>
+                <h4 class="font-semibold">De-escalation</h4>
+                <p class="text-sm text-gray-600">Learn verbal techniques to defuse situations peacefully</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</div>
+              <div>
+                <h4 class="font-semibold">Physical Response</h4>
+                <p class="text-sm text-gray-600">When and how to use physical techniques as a last resort</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</div>
+              <div>
+                <h4 class="font-semibold">Reporting</h4>
+                <p class="text-sm text-gray-600">Importance of telling trusted adults and seeking help</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-6">Parent Testimonials</h2>
+          <div class="space-y-4">
+            <div class="bg-accent p-4 rounded">
+              <p class="text-sm italic mb-2">
+                "My son has been training for 5 years and it has been incredibly positive. 
+                Sensei Maggie is amazing with children and has helped him develop confidence, 
+                discipline, and respect."
+              </p>
+              <p class="text-sm font-semibold">- Lil P., Parent</p>
+            </div>
+            <div class="bg-accent p-4 rounded">
+              <p class="text-sm italic mb-2">
+                "The dojo has a family feel that is very warm and welcoming. 
+                My boys have learned valuable life skills that will prepare them for their future."
+              </p>
+              <p class="text-sm font-semibold">- Parent of Two Students</p>
+            </div>
+            <div class="bg-accent p-4 rounded">
+              <p class="text-sm italic mb-2">
+                "Our son, who is on the spectrum, has thrived under Maggie's instruction. 
+                He's learned to focus, follow instructions, and gained incredible confidence."
+              </p>
+              <p class="text-sm font-semibold">- Ari and Adolfo Chavez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-12">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">Training Gallery</h2>
+        <ImageGallery images={galleryImages} />
+      </div>
+      
+      <div class="text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">Give Your Child the Gift of Martial Arts</h2>
+        <p class="text-lg mb-6">
+          Help your child develop confidence, discipline, and life skills that will benefit 
+          them throughout their life. Our experienced instructors create a fun, safe, 
+          and supportive learning environment.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <Button href="/free-trial">Book Free Trial</Button>
+          <Button href="/contact" type="secondary">Ask Questions</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

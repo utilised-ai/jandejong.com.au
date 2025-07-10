@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Sword Training Perth - Traditional Japanese Sword Training | Jan de Jong Martial Arts" description="Learn traditional Iai and Kenjutsu sword training in Perth at Jan de Jong Martial Arts. Develop timing skills and controlled attitude with expert instruction.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/sword-training-img.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Sword Training</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>Sword Training</h2>
+        <p>
+          Jan de Jong Martial Arts Fitness offer specific Iai and Kenjutsu Training (Sword). Classes will address basic sword handling and kata taken from within the Jan de Jong Martial Arts Fitness programs.
+        </p>
+        <p>
+          There is a direct relationship between the armed and the unarmed self-defence arts and these unique techniques will be explained and demonstrated during the course of the classes.
+        </p>
+        <p>
+          Sword work is part of the syllabus of Jan de Jong Martial Arts Fitness and is examined within the existing syllabus of Aikido and Ju Jutsu.
+        </p>
+        <p>
+          Some students however prefer to train only in sword training classes or personal training lessons of 'one on one'. This method of training is exciting and develops superb timing skills. This skill, as well as the controlled and resolute attitude that is required with Sword work, transfers perfectly to the other styles of Martial Arts we teach.
+        </p>
+        <p>
+          Personal training lessons can be taken in Sword Training for groups or individuals.
+        </p>
+      </div>
+      
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

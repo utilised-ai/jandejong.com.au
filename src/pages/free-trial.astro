@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Free Trial - Jan de Jong Martial Arts Fitness Perth | Book Your Trial Class" description="Book your free trial class at Jan de Jong Martial Arts Fitness Perth. Discover martial arts with expert instructors. No commitment required. All ages and abilities welcome.">
+  <section class="relative h-[500px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/membership-img-1.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Free Trial</h1>
+      <h2 class="text-2xl md:text-3xl mb-6 drop-shadow-lg">Discover the Art of Self-Defense with a Free Trial Class</h2>
+      <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Embark on a journey to master martial arts and uncover a world of discipline, confidence, and self-improvement</p>
+      <Button href="#free-trial" size="large">Book Now</Button>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div class="text-center">
+          <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold">✓</span>
+          </div>
+          <h3 class="text-xl font-heading uppercase mb-3">Expert Instructors</h3>
+          <p>Learn from highly skilled and experienced instructors who are dedicated to helping you achieve your goals, regardless of your age or skill level.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold">◯</span>
+          </div>
+          <h3 class="text-xl font-heading uppercase mb-3">Holistic Approach</h3>
+          <p>Our classes focus on both the physical and mental aspects of martial arts, ensuring that you develop a strong foundation and learn valuable life skills.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold">♥</span>
+          </div>
+          <h3 class="text-xl font-heading uppercase mb-3">Supportive Community</h3>
+          <p>Join a friendly and inclusive environment where students of all backgrounds and abilities come together to train, learn, and grow.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold">⏰</span>
+          </div>
+          <h3 class="text-xl font-heading uppercase mb-3">Flexible Schedule:</h3>
+          <p>Choose from a wide range of class timings to fit your busy lifestyle, with beginner, intermediate, and advanced classes available.</p>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded shadow-card p-8 mb-16" id="free-trial">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">Book Your free Class here</h2>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto space-y-6">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="Free Trial Booking">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block mb-2 font-semibold">Full Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
+              >
+            </div>
+            
+            <div>
+              <label for="email" class="block mb-2 font-semibold">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
+              >
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone"
+                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
+              >
+            </div>
+            
+            <div>
+              <label for="age" class="block mb-2 font-semibold">Age</label>
+              <input 
+                type="text" 
+                id="age" 
+                name="age"
+                class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
+              >
+            </div>
+          </div>
+          
+          <div>
+            <label for="notes" class="block mb-2 font-semibold">Notes</label>
+            <textarea 
+              id="notes" 
+              name="notes" 
+              rows="4"
+              maxlength="180"
+              placeholder="0 / 180"
+              class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
+            ></textarea>
+          </div>
+          
+          <div>
+            <label for="class-selection" class="block mb-2 font-semibold">Select a class</label>
+            <select 
+              id="class-selection" 
+              name="class-selection"
+              class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
+            >
+              <option value="Ju Jutsu">Ju Jutsu</option>
+              <option value="Aikido Training">Aikido Training</option>
+              <option value="Specialised Training">Specialised Training</option>
+              <option value="Stick Training">Stick Training</option>
+              <option value="Sword Training">Sword Training</option>
+              <option value="Self Defence (Women)">Self Defence (Women)</option>
+              <option value="Self Protection (Men & Women)">Self Protection (Men & Women)</option>
+              <option value="Personal Training">Personal Training</option>
+              <option value="Corporate Training">Corporate Training</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="w-full bg-primary text-white py-4 px-8 rounded hover:bg-primary-dark transition-colors font-semibold text-lg">
+            Submit
+          </button>
+          
+          <p class="text-sm text-gray-500 text-center">Please do not fill in this field.</p>
+        </form>
+      </div>
+      
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl text-center mb-8">Benefits of Training With Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-accent p-6 rounded">
+            <p>• Improved physical fitness, flexibility, and coordination</p>
+          </div>
+          <div class="bg-accent p-6 rounded">
+            <p>• Enhanced mental focus and discipline</p>
+          </div>
+          <div class="bg-accent p-6 rounded">
+            <p>• Increased self-confidence and self-esteem</p>
+          </div>
+          <div class="bg-accent p-6 rounded">
+            <p>• Effective self-defense techniques for real-life situations</p>
+          </div>
+          <div class="bg-accent p-6 rounded">
+            <p>• Reduced stress and anxiety</p>
+          </div>
+          <div class="bg-accent p-6 rounded">
+            <p>• Social connections and lasting friendships</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl text-center mb-12">WHAT OUR STUDENTS SAY</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded shadow-card p-6">
+            <div class="flex items-center mb-4">
+              <img src="/images/11.png" alt="Scott Barret" class="w-16 h-16 rounded-full mr-4">
+              <div>
+                <h4 class="font-semibold">Scott Barret</h4>
+                <div class="text-yellow-500">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-600">"I walked in the door of the Jan de Jong dojo looking for a martial art that could help me practice mindfulness. I use the word practice deliberately as I wanted something that I could work at long term. The Jan de Jong dojo community that Maggie Sensei and Paul Sensei have gathered around them is welcoming and inclusive and every time I walk through that door I know I am in the right place."</p>
+          </div>
+          
+          <div class="bg-white rounded shadow-card p-6">
+            <div class="flex items-center mb-4">
+              <img src="/images/testi2.png" alt="Linda" class="w-16 h-16 rounded-full mr-4">
+              <div>
+                <h4 class="font-semibold">Linda</h4>
+                <div class="text-yellow-500">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-600">"Thank you, Maggie, for running a fantastic self-defence course for girls over the school holidays. My girls were at first very reluctant, but after I convinced them to join the course, they now agree that it was both worthwhile and enjoyable. The format and content of the course is perfect for beginners to the concept of self-defence..."</p>
+          </div>
+          
+          <div class="bg-white rounded shadow-card p-6">
+            <div class="flex items-center mb-4">
+              <img src="/images/testi3.png" alt="Greg" class="w-16 h-16 rounded-full mr-4">
+              <div>
+                <h4 class="font-semibold">Greg</h4>
+                <div class="text-yellow-500">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-600">"I started training in self defence mid 2002 with Jan de Jong Martial Arts Fitness. Two of the main reasons I chose to train at Jan de Jong Martial Arts Fitness was its well respected reputation and the high level of martial arts knowledge displayed by its instructors."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

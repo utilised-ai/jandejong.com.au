@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Timetable - Jan de Jong Martial Arts Fitness Perth | Class Schedule & Booking" description="View class timetable and book sessions at Jan de Jong Martial Arts Fitness Perth. Live schedule with real-time availability. Book Ju Jutsu, Aikido, Tai Chi classes online.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/timetable-hero.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Timetable</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl mb-4">Live Class Schedule</h2>
+        <p class="text-lg">Book your classes directly through our live timetable below. All classes welcome beginners.</p>
+      </div>
+      
+      <!-- Momence Booking Widget -->
+      <div class="mb-12">
+        <div id="ribbon-schedule"></div>
+      </div>
+      
+      <div class="text-center bg-accent p-8 rounded">
+        <h3 class="text-2xl font-heading uppercase mb-4">Need Help Booking?</h3>
+        <p class="mb-6">Contact us if you need assistance with booking or have questions about our classes</p>
+        <div class="flex gap-4 justify-center">
+          <a href="/contact" class="bg-primary text-white px-6 py-3 rounded hover:bg-primary-dark transition-colors font-semibold">
+            Contact Us
+          </a>
+          <a href="tel:0427970481" class="bg-white text-primary border-2 border-primary px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors font-semibold">
+            Call: 0427 970 481
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script 
+  is:inline
+  async 
+  type="module" 
+  host_id="36885" 
+  teacher_ids="[]" 
+  location_ids="[]" 
+  tag_ids="[]" 
+  hide_drop_in_price="true" 
+  default_filter="show-all" 
+  src="https://momence.com/plugin/host-schedule/host-schedule.js">
+</script>
+
+<style>
+  :root {
+    --momenceColorBackground: #FBFBFB;
+    --momenceColorPrimary: 186, 0, 0;
+    --momenceColorBlack: 3, 1, 13;
+  }
+</style>

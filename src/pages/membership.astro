@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Membership - Jan de Jong Martial Arts Fitness Perth | Martial Arts Memberships" description="Membership options at Jan de Jong Martial Arts Fitness Perth. Platinum, Gold & Silver memberships available. Series & packages. Online booking or in-dojo purchase.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/membership-img-1.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Membership</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width">
+      <h2 class="text-3xl md:text-4xl text-center mb-8">Membership</h2>
+      
+      <div class="text-center mb-12">
+        <h3 class="text-2xl mb-4">Membership, Series & Packages</h3>
+        <p class="text-lg mb-6">Can all be purchased online or through the Perth office/dojo.</p>
+        <p class="mb-6">
+          <strong>Series</strong> is a purchase method for a set number of classes to be used within a certain time frame. This includes School Term options for children and secondary students. These can be purchased on their own or in conjunction with a Membership or Package
+        </p>
+        <Button href="/timetable">BUY NOW</Button>
+      </div>
+      
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl text-center mb-12">Memberships</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Platinum Membership -->
+          <div class="bg-white rounded shadow-card p-8 text-center">
+            <img src="/images/member-platinum.png" alt="Platinum Membership" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-2xl font-heading uppercase mb-4">PLATINUM MEMBERSHIP</h3>
+            <p class="mb-6">
+              Unlimited classes, free training, 10% discount on uniforms, 10% discount on private lessons, 20% discount on courses, use of training weights, additional 5% discount on private lesson packages.
+            </p>
+            <Button href="/timetable" class="w-full">BUY NOW</Button>
+          </div>
+          
+          <!-- Gold Membership -->
+          <div class="bg-white rounded shadow-card p-8 text-center border-2 border-primary">
+            <img src="/images/member-gold.png" alt="Gold Membership" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-2xl font-heading uppercase mb-4">GOLD MEMBERSHIP</h3>
+            <p class="mb-6">
+              2 or 3 classes per week, free training, 10% discount on uniforms, 5% discount on private lessons, 10% discount on courses
+            </p>
+            <Button href="/timetable" class="w-full">BUY NOW</Button>
+          </div>
+          
+          <!-- Silver Membership -->
+          <div class="bg-white rounded shadow-card p-8 text-center">
+            <img src="/images/member-silver.png" alt="Silver Membership" class="w-16 h-16 mx-auto mb-4">
+            <h3 class="text-2xl font-heading uppercase mb-4">SILVER MEMBERSHIP</h3>
+            <p class="mb-6">
+              1 class per week, free training, 5% discount on uniforms
+            </p>
+            <Button href="/timetable" class="w-full">BUY NOW</Button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="text-3xl md:text-4xl mb-6">Packages</h2>
+          <p class="text-lg mb-6">
+            Are available to students in their first month of joining, combinations of uniforms, classes, private lessons are discounted to get you started!
+          </p>
+          <Button href="/timetable">membership & packages</Button>
+        </div>
+        <div>
+          <img src="/images/membership-img-2.png" alt="Membership packages" class="w-full rounded">
+        </div>
+      </div>
+      
+      <!-- Book Free Trial Section -->
+      <div class="text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

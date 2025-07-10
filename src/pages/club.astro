@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="The Club">
+  <Hero
+    title="The Club"
+    subtitle="A welcoming martial arts community built on tradition and respect"
+    backgroundImage="/images/club-hero.jpg"
+    ctaText="Join Our Community"
+    ctaLink="/become-a-member"
+  />
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>A Family Atmosphere</h2>
+        <p>
+          Jan de Jong Martial Arts Fitness is more than just a place to learn martial arts - 
+          it's a community. Our dojo has a family feel that is very warm and welcoming to both 
+          new and existing students. We pride ourselves on creating an environment where everyone 
+          feels supported and encouraged in their martial arts journey.
+        </p>
+        
+        <h2>Our Philosophy</h2>
+        <p>
+          All classes are conducted in a positive, friendly atmosphere of cooperation, not 
+          competition. All students are encouraged to support and help each other, ensuring 
+          an enjoyable and fruitful learning experience. This collaborative approach creates 
+          lasting friendships and a strong sense of community among our members.
+        </p>
+        
+        <h2>Inclusive Environment</h2>
+        <p>
+          We welcome students of all ages, backgrounds, and abilities. Our instructors are 
+          skilled at adapting training to meet individual needs, whether you're a complete 
+          beginner, returning to martial arts after time away, or an experienced practitioner 
+          looking to expand your skills.
+        </p>
+        
+        <h2>Student Support Network</h2>
+        <p>
+          One of the unique aspects of our club is how students support each other. Senior 
+          students often mentor newcomers, creating a positive learning environment where 
+          everyone benefits. This peer support system helps new students feel comfortable 
+          and confident as they begin their martial arts journey.
+        </p>
+        
+        <h2>Special Needs Welcome</h2>
+        <p>
+          We have extensive experience working with students who have special needs, including 
+          those on the autism spectrum. Our instructors are patient, understanding, and skilled 
+          at adapting teaching methods to ensure every student can participate and benefit from 
+          martial arts training.
+        </p>
+        
+        <h2>Community Events and Activities</h2>
+        <p>
+          Throughout the year, we organize various events and activities that bring our 
+          community together outside of regular training. These include demonstrations, 
+          social gatherings, and special training workshops that strengthen the bonds 
+          between members.
+        </p>
+        
+        <h2>Lifelong Friendships</h2>
+        <p>
+          Many of our students develop friendships that extend far beyond the dojo. The 
+          shared experience of martial arts training, combined with our supportive community 
+          atmosphere, creates connections that often last a lifetime.
+        </p>
+        
+        <h2>Values We Share</h2>
+        <p>
+          Our club is built on core values of respect, discipline, perseverance, and mutual 
+          support. These values are not just taught in our martial arts techniques but are 
+          lived and demonstrated by our instructors and students every day.
+        </p>
+      </div>
+      
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">Join Our Martial Arts Family</h2>
+        <p class="text-lg mb-6">
+          Experience the warmth and support of our community. Whether you're looking to 
+          learn self-defence, improve fitness, or simply be part of something special, 
+          you'll find a home at Jan de Jong Martial Arts Fitness.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <Button href="/free-trial">Try a Free Class</Button>
+          <Button href="/contact" type="secondary">Visit Our Dojo</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

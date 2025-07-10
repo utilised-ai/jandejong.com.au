@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout title="Personal Training - Jan de Jong Martial Arts Fitness Perth | One on One Training" description="Personal Training at Jan de Jong Martial Arts Fitness Perth. One on one lessons for job specific needs, fast tracking, grading preparation. Male & female instructors available.">
+  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/personal-training-img.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Personal Training</h1>
+    </div>
+  </section>
+  
+  <section class="section-padding">
+    <div class="container-width max-w-4xl">
+      <div class="prose prose-lg mx-auto">
+        <h2>Personal Training</h2>
+        
+        <h2>Personal Training One on One</h2>
+        
+        <p>
+          Personal Training Lessons are a way of improving on particular areas to meet your needs. We can address job or martial arts specific needs.
+        </p>
+        
+        <p>Personal Training Lessons can assist you with:</p>
+        
+        <ul>
+          <li>Fast tracking your training.</li>
+          <li>Improving on areas of difficulties.</li>
+          <li>Giving you basic introduction before group class training.</li>
+          <li>Addressing concerns and assisting in overcoming fears.</li>
+          <li>Concentrated training for people with time limitations.</li>
+          <li>Lessons at a time that suits you.</li>
+        </ul>
+        
+        <p>
+          Personal Training Lessons will develop a greater feeling of self confidence and basic expertise before entering a group class. Students may take the option to have Personal Training Lessons at anytime particularly leading up to a grading.
+        </p>
+        
+        <p>
+          Please take the time to look at our 'Starter Packages'. These packages offer significant discounts to members in their first month of joining.
+        </p>
+        
+        <p>
+          Families, friends, partners and groups can share the cost of Personal Training Lessons and enjoy these special training sessions.
+        </p>
+        
+        <p>
+          If you have a specific interest in weapon training these can also be taught in Personal Training sessions to individuals or groups.
+        </p>
+        
+        <p>
+          Male and female instructors are available for Personal Training. You do not need to be attending group classes to have Personal Training Lessons.
+        </p>
+      </div>
+      
+      <!-- Book Free Trial Section -->
+      <div class="mt-12 text-center bg-accent p-8 rounded">
+        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
+        <p class="text-lg mb-6">
+          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
+          There are separate memberships for adults, students, and children.
+        </p>
+        <Button href="/free-trial">Free Trial</Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
