@@ -12,7 +12,9 @@
       "Bash(git push:*)",
       "Bash(node:*)",
       "Bash(curl:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "mcp__mcp-server-firecrawl__firecrawl_search",
+      "Bash(npx astro add:*)"
     ],
     "deny": []
   }

@@ -13,176 +13,376 @@ import Hero from '../components/Hero.astro';
   
   <section class="section-padding">
     <div class="container-width">
-      <h2 class="text-3xl md:text-4xl text-center mb-12">WE TRAIN YOU</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl mb-4">WE TRAIN YOU</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Discover the ancient arts of self-defense through our comprehensive martial arts programs. 
+          From traditional Ju Jutsu to modern self-protection, find the perfect class for your journey.
+        </p>
+      </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/jujutsu.jpg" alt="Ju Jutsu" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Ju Jutsu</h3>
-            <p class="mb-4">
-              Ju Jutsu is the ancient Japanese art of self defence used by the Samurai in feudal Japan. Ju Jutsu is a comprehensive system of self defence which can be described
+        <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 group">
+          <figure class="relative">
+            <img src="/images/jujutsu.jpg" alt="Ju Jutsu" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </figure>
+          <div class="card-body">
+            <div class="flex items-center mb-3">
+              <div class="avatar placeholder">
+                <div class="bg-primary text-primary-content rounded-full w-8">
+                  <span class="text-sm font-bold">武</span>
+                </div>
+              </div>
+              <h3 class="card-title ml-3">Ju Jutsu</h3>
+            </div>
+            <p class="text-base-content/70">
+              Ancient Japanese art of self-defense used by the Samurai. A comprehensive system that adapts to modern self-protection needs.
             </p>
-            <Button href="/ju-jutsu">Read More</Button>
+            <div class="card-actions justify-between items-center mt-4">
+              <div class="badge badge-outline">
+                <span class="mr-1">👥</span>
+                All Ages
+              </div>
+              <Button href="/ju-jutsu" size="sm">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/aikido.jpg" alt="Aikido" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/aikido.jpg" alt="Aikido" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Aikido</h3>
-            <p class="mb-4">
-              Aikido ('way of harmony') is an unarmed method of self defence founded in Japan in 1942 by Morihei Ueshiba and is based on the principle of harmony
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">和</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Aikido</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              The 'way of harmony' - an unarmed method of self-defense based on redirecting an opponent's energy rather than opposing it.
             </p>
-            <Button href="/aikido-perth">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">🎯</span>
+                <span>Adults</span>
+              </div>
+              <Button href="/aikido-perth">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/specialised_training.jpg" alt="Specialised Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/specialised_training.jpg" alt="Specialised Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Specialised Training</h3>
-            <p class="mb-4">
-              Ideal for specialised professions such as police, security officers, mine site controllers, journalists, nurses or any other groups or individuals requiring
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">🎖️</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Specialised Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Professional training for police, security officers, healthcare workers, and other specialized professions requiring advanced self-protection skills.
             </p>
-            <Button href="/specialised-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">👔</span>
+                <span>Professionals</span>
+              </div>
+              <Button href="/specialised-training">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/stick_traing.jpg" alt="Stick Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/stick_traing.jpg" alt="Stick Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Stick Training</h3>
-            <p class="mb-4">
-              There are stories of armed samurai being defeated by peasants with a jo (150cm stick). These are weapons not to be under-estimated.
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">🥢</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Stick Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Master the Jo, Tanbo, and Bo - traditional Japanese weapons training. Learn the art that once defeated armed samurai.
             </p>
-            <Button href="/stick-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">⚔️</span>
+                <span>Weapons</span>
+              </div>
+              <Button href="/stick-training">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/sword_training.jpg" alt="Sword Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/sword_training.jpg" alt="Sword Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Sword Training</h3>
-            <p class="mb-4">
-              Jan de Jong Martial Arts Fitness offer specific Iai and Kenjutsu Training (Sword). Classes will address basic sword handling and kata taken
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">⚔️</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Sword Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Traditional Iai and Kenjutsu training. Learn the way of the sword through kata and fundamental techniques passed down through generations.
             </p>
-            <Button href="/sword-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">🗡️</span>
+                <span>Advanced</span>
+              </div>
+              <Button href="/sword-training">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/self_defence.jpg" alt="Self Defence" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/self_defence.jpg" alt="Self Defence" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Self Defence</h3>
-            <p class="mb-4">
-              "Self defence is a basic life skill which most women will find useful at least once in their life time." You will be taught a number of self defence techniques
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">👊</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Self Defence</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Essential life skills for women's safety. Learn practical self-defense techniques that can be used in real-world situations.
             </p>
-            <Button href="/self-defence">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">👩</span>
+                <span>Women</span>
+              </div>
+              <Button href="/self-defence">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/self_protection.jpg" alt="Self Protection" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/self_protection.jpg" alt="Self Protection" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Self Protection</h3>
-            <p class="mb-4">
-              "Self defence is a basic life skill, which unfortunately many people will need at sometime in their life." Inherent in the Self Protection Course for Men & Women
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">🔰</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Self Protection</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Comprehensive self-protection course for men and women. Learn essential skills for personal safety in everyday situations.
             </p>
-            <Button href="/self-protection">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">👥</span>
+                <span>All Genders</span>
+              </div>
+              <Button href="/self-protection">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/personal_training.jpg" alt="Personal Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/personal_training.jpg" alt="Personal Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Personal Training</h3>
-            <p class="mb-4">
-              Personal Training Lessons are a way of improving on particular areas to meet your needs. We can address job or martial arts specific needs.
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">🎯</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Personal Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              One-on-one instruction tailored to your specific needs and goals. Perfect for targeted skill development and individual attention.
             </p>
-            <Button href="/personal-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">👤</span>
+                <span>1-on-1</span>
+              </div>
+              <Button href="/personal-training">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/corporate_training.jpg" alt="Corporate Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/corporate_training.jpg" alt="Corporate Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Corporate Training</h3>
-            <p class="mb-4">
-              Our Corporate Training offers in house or at our premises training ranging from "one off" delivered safety talks to "hands on" full participation short
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">🏢</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Corporate Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Professional workplace safety training. From safety talks to hands-on participation courses, tailored to your organization's needs.
             </p>
-            <Button href="/corporate-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">💼</span>
+                <span>Corporate</span>
+              </div>
+              <Button href="/corporate-training">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/security_training.jpg" alt="Security Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/security_training.jpg" alt="Security Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Security Training</h3>
-            <p class="mb-4">
-              The senior instructor of Jan de Jong Martial Arts Fitness, Paul Connolly, has worked with the Security Industry since 1982 and is able to offer solutions
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">🔒</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Security Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
+              Specialized training for security professionals. Over 40 years of industry experience providing practical skills for security situations.
             </p>
-            <Button href="/security-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">🚪</span>
+                <span>Security</span>
+              </div>
+              <Button href="/security-training">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/tai_chi.jpg" alt="Tai Chi" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/tai_chi.jpg" alt="Tai Chi" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Tai Chi</h3>
-            <p class="mb-4">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">☯️</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Tai Chi</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
               Ancient Chinese martial art combining gentle flowing movements, deep breathing, and meditation for health and wellbeing.
             </p>
-            <Button href="/tai-chi">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">🧘</span>
+                <span>Wellness</span>
+              </div>
+              <Button href="/tai-chi">Learn More</Button>
+            </div>
           </div>
         </div>
         
-        <div class="bg-white rounded shadow-card overflow-hidden">
-          <img src="/images/weapons_training.jpg" alt="Weapons Training" class="w-full h-48 object-cover">
+        <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+          <div class="relative">
+            <img src="/images/weapons_training.jpg" alt="Weapons Training" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-heading uppercase mb-3">Weapons Training</h3>
-            <p class="mb-4">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                <span class="text-white font-bold text-sm">⚔️</span>
+              </div>
+              <h3 class="text-xl font-heading uppercase">Weapons Training</h3>
+            </div>
+            <p class="mb-4 text-gray-600">
               Traditional Japanese weapons training including sword, stick, and other classical martial arts weapons for advanced students.
             </p>
-            <Button href="/sword-training">Read More</Button>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-500">
+                <span class="mr-2">🗡️</span>
+                <span>Advanced</span>
+              </div>
+              <Button href="/sword-training">Learn More</Button>
+            </div>
           </div>
         </div>
       </div>
       
-      <div class="mb-16">
+      <div class="mb-16 bg-gradient-to-r from-accent to-gray-50 py-12 px-8 rounded-lg">
         <h2 class="text-3xl md:text-4xl text-center mb-8">MEET YOUR INSTRUCTORS</h2>
-        <p class="text-lg mb-12 max-w-4xl mx-auto text-center">
-          Instructors at Jan de Jong Martial Arts Fitness are acclaimed for their high level of technical knowledge and teaching ability. Jan de Jong Martial Arts Fitness commenced teaching at colleges and schools in Perth over 40 years ago. All classes are conducted in a positive, friendly atmosphere of cooperation, not competition. All students are encouraged to support and help each other, ensuring an enjoyable and fruitful learning experience. Jan de Jong Martial Arts Fitness has taught self defence in Perth since 1952. All instructors are students of, and have graded in, Jan de Jong Martial Arts, and have many years of experience up to more than 40 years. Our aim is to equip students to go about their daily life with quiet confidence knowing that they have efficient skills to protect themselves should the need arise.
-        </p>
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg mb-8 text-center text-gray-700">
+            Our instructors are acclaimed for their high level of technical knowledge and teaching ability. 
+            With over 70 years of experience teaching self-defense in Perth, we create a positive, 
+            cooperative learning environment where students support each other.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+              <div class="text-2xl text-primary mb-2">70+</div>
+              <div class="text-sm text-gray-600">Years Experience</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+              <div class="text-2xl text-primary mb-2">40+</div>
+              <div class="text-sm text-gray-600">Years Teaching</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+              <div class="text-2xl text-primary mb-2">100%</div>
+              <div class="text-sm text-gray-600">Qualified Instructors</div>
+            </div>
+          </div>
+        </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="text-center">
-            <img src="/images/maggie-de-jong-scaled.jpg" alt="Maggie de Jong" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-heading uppercase mb-2">MAGGIE DE JONG</h3>
-            <h4 class="text-lg font-semibold text-primary">Owner / Instructor</h4>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <img src="/images/maggie-de-jong-scaled.jpg" alt="Maggie de Jong" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-primary">
+            <h3 class="text-lg font-heading uppercase mb-2">MAGGIE DE JONG</h3>
+            <h4 class="text-sm font-semibold text-primary mb-2">Owner / Instructor</h4>
+            <p class="text-xs text-gray-600">Leading the legacy of Jan de Jong Martial Arts with decades of experience and dedication to student development.</p>
           </div>
           
-          <div class="text-center">
-            <img src="/images/paul-connoly-scaled.jpg" alt="Paul Connolly" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-heading uppercase mb-2">PAUL CONNOLLY</h3>
-            <h4 class="text-lg font-semibold text-primary">Instructor</h4>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <img src="/images/paul-connoly-scaled.jpg" alt="Paul Connolly" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-primary">
+            <h3 class="text-lg font-heading uppercase mb-2">PAUL CONNOLLY</h3>
+            <h4 class="text-sm font-semibold text-primary mb-2">Senior Instructor</h4>
+            <p class="text-xs text-gray-600">Specialist in security training with over 40 years in the industry, bringing real-world experience to every class.</p>
           </div>
           
-          <div class="text-center">
-            <img src="/images/daryl-cook-scaled.jpg" alt="Daryl Cook" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-            <h3 class="text-xl font-heading uppercase mb-2">DARYL COOK</h3>
-            <h4 class="text-lg font-semibold text-primary">Instructor</h4>
+          <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <img src="/images/daryl-cook-scaled.jpg" alt="Daryl Cook" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-primary">
+            <h3 class="text-lg font-heading uppercase mb-2">DARYL COOK</h3>
+            <h4 class="text-sm font-semibold text-primary mb-2">Instructor</h4>
+            <p class="text-xs text-gray-600">Experienced martial artist bringing traditional techniques and modern applications to student training.</p>
           </div>
         </div>
       </div>
       
-      <div class="text-center bg-accent p-8 rounded">
-        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
-        <p class="text-lg mb-6">
-          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
-          There are separate memberships for adults, students, and children.
+      <div class="text-center bg-gradient-to-r from-primary to-primary-hover p-8 rounded-lg text-white">
+        <h2 class="text-3xl md:text-4xl mb-4">READY TO START YOUR JOURNEY?</h2>
+        <p class="text-lg mb-6 opacity-90">
+          Join thousands of students who have discovered confidence through martial arts. 
+          Try any class for free and see which path is right for you.
         </p>
-        <Button href="/free-trial">Free Trial</Button>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button href="/free-trial" class="bg-white text-primary hover:bg-gray-100">Book Free Trial</Button>
+          <a href="/contact" class="text-white hover:text-gray-200 underline">Have questions? Contact us</a>
+        </div>
       </div>
     </div>
   </section>

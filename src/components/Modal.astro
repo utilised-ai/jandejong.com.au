@@ -1,0 +1,70 @@
+---
+export interface Props {
+  id: string;
+  title: string;
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+}
+
+const { id, title, size = 'md' } = Astro.props;
+
+const sizeClasses = {
+  sm: 'modal-box w-11/12 max-w-md',
+  md: 'modal-box w-11/12 max-w-2xl',
+  lg: 'modal-box w-11/12 max-w-4xl',
+  xl: 'modal-box w-11/12 max-w-6xl'
+};
+---
+
+<div 
+  x-data="{ open: false }"
+  x-show="open"
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="opacity-0"
+  x-transition:enter-end="opacity-100"
+  x-transition:leave="transition ease-in duration-200"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  class="modal"
+  :class="open ? 'modal-open' : ''"
+  @keydown.escape="open = false"
+  @click.self="open = false"
+>
+  <div class={sizeClasses[size]}>
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="font-bold text-lg">{title}</h3>
+      <button 
+        class="btn btn-sm btn-circle btn-ghost"
+        @click="open = false"
+        aria-label="Close modal"
+      >
+        ✕
+      </button>
+    </div>
+    
+    <div class="py-4">
+      <slot />
+    </div>
+    
+    <div class="modal-action">
+      <slot name="actions">
+        <button class="btn" @click="open = false">Close</button>
+      </slot>
+    </div>
+  </div>
+</div>
+
+<!-- Trigger button (optional, can be customized) -->
+<slot name="trigger" />
+
+<script>
+  // Global function to open modal
+  function openModal(modalId) {
+    const modal = document.querySelector(`[data-modal-id="${modalId}"]`);
+    if (modal && modal.__x) {
+      modal.__x.$data.open = true;
+    }
+  }
+  
+  // Make it globally available
+  window.openModal = openModal;
+</script>

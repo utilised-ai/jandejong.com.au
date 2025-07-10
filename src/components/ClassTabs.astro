@@ -1,0 +1,184 @@
+---
+// Interactive class schedule tabs using DaisyUI and Alpine.js
+---
+
+<div 
+  x-data="{
+    activeTab: 'all',
+    scheduleData: {
+      all: [
+        { time: '6:00 AM', class: 'Morning Tai Chi', instructor: 'Master Chen', level: 'All Levels', day: 'Mon/Wed/Fri' },
+        { time: '7:00 PM', class: 'Ju Jutsu Fundamentals', instructor: 'Sensei Paul', level: 'Beginner', day: 'Mon/Wed' },
+        { time: '7:30 PM', class: 'Aikido Training', instructor: 'Sensei Margaret', level: 'Intermediate', day: 'Tue/Thu' },
+        { time: '6:30 PM', class: 'Children\\'s Martial Arts', instructor: 'Sensei Maggie', level: 'Ages 5-15', day: 'Mon/Wed/Fri' },
+        { time: '8:30 PM', class: 'Advanced Ju Jutsu', instructor: 'Sensei Paul', level: 'Advanced', day: 'Tue/Thu' }
+      ],
+      traditional: [
+        { time: '6:00 AM', class: 'Morning Tai Chi', instructor: 'Master Chen', level: 'All Levels', day: 'Mon/Wed/Fri' },
+        { time: '7:00 PM', class: 'Ju Jutsu Fundamentals', instructor: 'Sensei Paul', level: 'Beginner', day: 'Mon/Wed' },
+        { time: '7:30 PM', class: 'Aikido Training', instructor: 'Sensei Margaret', level: 'Intermediate', day: 'Tue/Thu' },
+        { time: '8:30 PM', class: 'Advanced Ju Jutsu', instructor: 'Sensei Paul', level: 'Advanced', day: 'Tue/Thu' }
+      ],
+      selfdefense: [
+        { time: '7:00 PM', class: 'Women\\'s Self Defence', instructor: 'Sensei Margaret', level: 'All Levels', day: 'Saturday' },
+        { time: '10:00 AM', class: 'Self Protection Workshop', instructor: 'Sensei Paul', level: 'All Levels', day: 'Sunday' }
+      ],
+      kids: [
+        { time: '6:30 PM', class: 'Little Samurai (5-8 years)', instructor: 'Sensei Maggie', level: 'Ages 5-8', day: 'Mon/Wed' },
+        { time: '7:15 PM', class: 'Youth Program (9-15 years)', instructor: 'Sensei Maggie', level: 'Ages 9-15', day: 'Mon/Wed/Fri' }
+      ]
+    },
+    
+    get currentSchedule() {
+      return this.scheduleData[this.activeTab] || [];
+    }
+  }"
+  class="w-full max-w-6xl mx-auto"
+>
+  <!-- Tab Navigation -->
+  <div class="tabs tabs-lifted tabs-lg w-full justify-center mb-8">
+    <button 
+      class="tab"
+      :class="activeTab === 'all' ? 'tab-active' : ''"
+      @click="activeTab = 'all'"
+    >
+      <span class="mr-2">📅</span>
+      All Classes
+    </button>
+    <button 
+      class="tab"
+      :class="activeTab === 'traditional' ? 'tab-active' : ''"
+      @click="activeTab = 'traditional'"
+    >
+      <span class="mr-2">🥋</span>
+      Traditional Arts
+    </button>
+    <button 
+      class="tab"
+      :class="activeTab === 'selfdefense' ? 'tab-active' : ''"
+      @click="activeTab = 'selfdefense'"
+    >
+      <span class="mr-2">🛡️</span>
+      Self Defense
+    </button>
+    <button 
+      class="tab"
+      :class="activeTab === 'kids' ? 'tab-active' : ''"
+      @click="activeTab = 'kids'"
+    >
+      <span class="mr-2">👶</span>
+      Kids Classes
+    </button>
+  </div>
+
+  <!-- Schedule Content -->
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body">
+      <h3 class="card-title text-2xl mb-6 justify-center">
+        <span class="mr-2">⏰</span>
+        Class Schedule
+      </h3>
+      
+      <!-- Schedule Table -->
+      <div class="overflow-x-auto">
+        <table class="table table-zebra">
+          <thead>
+            <tr>
+              <th class="text-center">Time</th>
+              <th>Class</th>
+              <th>Instructor</th>
+              <th class="text-center">Level</th>
+              <th class="text-center">Days</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template x-for="classItem in currentSchedule" :key="classItem.class">
+              <tr 
+                class="hover"
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 transform translate-y-4"
+                x-transition:enter-end="opacity-100 transform translate-y-0"
+              >
+                <td class="text-center">
+                  <div class="badge badge-primary badge-lg" x-text="classItem.time"></div>
+                </td>
+                <td>
+                  <div class="font-semibold" x-text="classItem.class"></div>
+                </td>
+                <td>
+                  <div class="flex items-center gap-3">
+                    <div class="avatar placeholder">
+                      <div class="bg-neutral text-neutral-content rounded-full w-8">
+                        <span class="text-xs">👤</span>
+                      </div>
+                    </div>
+                    <span x-text="classItem.instructor"></span>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="badge badge-outline" x-text="classItem.level"></div>
+                </td>
+                <td class="text-center" x-text="classItem.day"></td>
+                <td class="text-center">
+                  <button class="btn btn-primary btn-xs">Book Trial</button>
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Empty State -->
+      <div x-show="currentSchedule.length === 0" class="text-center py-8">
+        <div class="text-6xl mb-4">📝</div>
+        <h3 class="text-lg font-semibold mb-2">No classes scheduled</h3>
+        <p class="text-base-content/70">Check back soon for updated schedule information.</p>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="card-actions justify-center mt-6">
+        <div class="stats shadow">
+          <div class="stat place-items-center">
+            <div class="stat-title">Weekly Classes</div>
+            <div class="stat-value text-primary" x-text="currentSchedule.length"></div>
+            <div class="stat-desc">Available this week</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Info Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+    <div class="card bg-primary text-primary-content">
+      <div class="card-body text-center">
+        <h4 class="card-title justify-center">🆓 Free Trial</h4>
+        <p>Try any class for free! No obligation, just come and experience our training.</p>
+        <div class="card-actions justify-center">
+          <button class="btn btn-secondary btn-sm">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card bg-secondary text-secondary-content">
+      <div class="card-body text-center">
+        <h4 class="card-title justify-center">👥 Group Discounts</h4>
+        <p>Bring friends and family! Special rates available for group memberships.</p>
+        <div class="card-actions justify-center">
+          <button class="btn btn-primary btn-sm">Learn More</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card bg-accent text-accent-content">
+      <div class="card-body text-center">
+        <h4 class="card-title justify-center">📞 Private Lessons</h4>
+        <p>One-on-one training available. Perfect for personalized instruction and faster progress.</p>
+        <div class="card-actions justify-center">
+          <button class="btn btn-primary btn-sm">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

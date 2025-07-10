@@ -1,0 +1,206 @@
+---
+// Beautiful contact form using DaisyUI components
+---
+
+<div class="card bg-base-100 shadow-xl max-w-2xl mx-auto">
+  <div class="card-body">
+    <h2 class="card-title text-2xl mb-6 justify-center">
+      <span class="mr-2">✉️</span>
+      Get In Touch
+    </h2>
+    
+    <form 
+      x-data="{
+        formData: {
+          name: '',
+          email: '',
+          phone: '',
+          interest: '',
+          experience: '',
+          message: ''
+        },
+        isSubmitting: false,
+        errors: {},
+        
+        async submitForm() {
+          this.isSubmitting = true;
+          this.errors = {};
+          
+          // Basic validation
+          if (!this.formData.name) this.errors.name = 'Name is required';
+          if (!this.formData.email) this.errors.email = 'Email is required';
+          if (!this.formData.message) this.errors.message = 'Message is required';
+          
+          if (Object.keys(this.errors).length === 0) {
+            // Simulate form submission
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            alert('Thank you! We will contact you soon.');
+            this.formData = { name: '', email: '', phone: '', interest: '', experience: '', message: '' };
+          }
+          
+          this.isSubmitting = false;
+        }
+      }"
+      @submit.prevent="submitForm()"
+      class="space-y-6"
+    >
+      <!-- Personal Information Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-semibold">Name *</span>
+          </label>
+          <input 
+            type="text" 
+            x-model="formData.name"
+            placeholder="Your full name" 
+            class="input input-bordered focus:input-primary"
+            :class="errors.name ? 'input-error' : ''"
+          />
+          <label class="label" x-show="errors.name">
+            <span class="label-text-alt text-error" x-text="errors.name"></span>
+          </label>
+        </div>
+        
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-semibold">Email *</span>
+          </label>
+          <input 
+            type="email" 
+            x-model="formData.email"
+            placeholder="your.email@example.com" 
+            class="input input-bordered focus:input-primary"
+            :class="errors.email ? 'input-error' : ''"
+          />
+          <label class="label" x-show="errors.email">
+            <span class="label-text-alt text-error" x-text="errors.email"></span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- Contact & Interest Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-semibold">Phone</span>
+          </label>
+          <input 
+            type="tel" 
+            x-model="formData.phone"
+            placeholder="(08) 1234 5678" 
+            class="input input-bordered focus:input-primary"
+          />
+        </div>
+        
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-semibold">Class of Interest</span>
+          </label>
+          <select x-model="formData.interest" class="select select-bordered focus:select-primary">
+            <option value="">Select a class</option>
+            <option value="ju-jutsu">Ju Jutsu</option>
+            <option value="aikido">Aikido</option>
+            <option value="tai-chi">Tai Chi</option>
+            <option value="self-defence">Self Defence</option>
+            <option value="childrens">Children's Training</option>
+            <option value="corporate">Corporate Training</option>
+            <option value="personal">Personal Training</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Experience Level -->
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text font-semibold">Experience Level</span>
+        </label>
+        <div class="flex flex-wrap gap-4">
+          <label class="label cursor-pointer">
+            <input type="radio" x-model="formData.experience" value="beginner" class="radio radio-primary" />
+            <span class="label-text ml-2">Beginner</span>
+          </label>
+          <label class="label cursor-pointer">
+            <input type="radio" x-model="formData.experience" value="intermediate" class="radio radio-primary" />
+            <span class="label-text ml-2">Intermediate</span>
+          </label>
+          <label class="label cursor-pointer">
+            <input type="radio" x-model="formData.experience" value="advanced" class="radio radio-primary" />
+            <span class="label-text ml-2">Advanced</span>
+          </label>
+          <label class="label cursor-pointer">
+            <input type="radio" x-model="formData.experience" value="returning" class="radio radio-primary" />
+            <span class="label-text ml-2">Returning Student</span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- Message -->
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text font-semibold">Message *</span>
+        </label>
+        <textarea 
+          x-model="formData.message"
+          class="textarea textarea-bordered h-32 focus:textarea-primary" 
+          placeholder="Tell us about your goals, questions, or anything else we should know..."
+          :class="errors.message ? 'textarea-error' : ''"
+        ></textarea>
+        <label class="label" x-show="errors.message">
+          <span class="label-text-alt text-error" x-text="errors.message"></span>
+        </label>
+      </div>
+      
+      <!-- Newsletter Signup -->
+      <div class="form-control">
+        <label class="label cursor-pointer justify-start">
+          <input type="checkbox" class="checkbox checkbox-primary mr-3" />
+          <span class="label-text">Subscribe to our newsletter for training tips and class updates</span>
+        </label>
+      </div>
+      
+      <!-- Submit Button -->
+      <div class="form-control">
+        <button 
+          type="submit" 
+          class="btn btn-primary btn-lg"
+          :class="isSubmitting ? 'loading' : ''"
+          :disabled="isSubmitting"
+        >
+          <span x-show="!isSubmitting">Send Message</span>
+          <span x-show="isSubmitting">Sending...</span>
+        </button>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="divider">OR</div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-2">
+            <span class="text-primary-content">📞</span>
+          </div>
+          <span class="font-semibold">Call Us</span>
+          <a href="tel:+61893833777" class="link link-primary text-sm">(08) 9383 3777</a>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-2">
+            <span class="text-primary-content">✉️</span>
+          </div>
+          <span class="font-semibold">Email Us</span>
+          <a href="mailto:info@jandejong.com.au" class="link link-primary text-sm">info@jandejong.com.au</a>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-2">
+            <span class="text-primary-content">📍</span>
+          </div>
+          <span class="font-semibold">Visit Us</span>
+          <span class="text-sm">Shenton Park, WA</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

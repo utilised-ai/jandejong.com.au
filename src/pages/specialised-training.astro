@@ -12,31 +12,175 @@ import Hero from '../components/Hero.astro';
   />
   
   <section class="section-padding">
-    <div class="container-width max-w-4xl">
-      <div class="prose prose-lg mx-auto">
-        <h2>Specialised Training</h2>
+    <div class="container-width max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+        <div class="lg:col-span-2">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                <span class="text-white font-bold text-lg">🎖️</span>
+              </div>
+              <div>
+                <h1 class="text-3xl font-heading uppercase mb-2">Specialised Training</h1>
+                <p class="text-gray-600">Professional Training Solutions</p>
+              </div>
+            </div>
+            
+            <div class="prose prose-lg max-w-none">
+              <h2 class="text-2xl font-heading uppercase mb-4">Tailored for Your Profession</h2>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Ideal for specialised professions such as police, security officers, mine site controllers, journalists, nurses or any other groups or individuals requiring specific training objectives.
+              </p>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Whether it is a 'one on one' lesson or group sessions, this is a great way to meet your personal or company requirements. You choose the art that best suits you, with our help we will ensure you meet your goals.
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                This is your opportunity to drill down to what it is you wish to achieve. If you have never done a class with us previously it might be an opportunity to get all of those questions answered. Maybe you have been away and want a refresher. Whatever your reasons just ask us and we will be glad to assist.
+              </p>
+            </div>
+          </div>
+        </div>
         
-        <p>
-          Ideal for specialised professions such as police, security officers, mine site controllers, journalists, nurses or any other groups or individuals requiring specific training objectives.
-        </p>
-        
-        <p>
-          Whether it is a 'one on one' lesson or group sessions, this is a great way to meet your personal or company requirements. You choose the art that best suits you, with our help we will ensure you meet your goals.
-        </p>
-        
-        <p>
-          This is your opportunity to drill down to what it is you wish to achieve. If you have never done a class with us previously it might be an opportunity to get all of those questions answered. Maybe you have been away and want a refresher. Whatever your reasons just ask us and we will be glad to assist.
-        </p>
+        <div class="space-y-6">
+          <div class="bg-gradient-to-br from-primary to-primary-hover p-6 rounded-lg text-white">
+            <h3 class="text-xl font-heading uppercase mb-4">Professional Focus</h3>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <span class="mr-3">👮</span>
+                <span>Law Enforcement</span>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-3">🏥</span>
+                <span>Healthcare Workers</span>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-3">⛏️</span>
+                <span>Mining Industry</span>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-3">📰</span>
+                <span>Media Professionals</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-accent p-6 rounded-lg">
+            <h3 class="text-xl font-heading uppercase mb-4">Training Options</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>One-on-one sessions</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Group training</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Customized objectives</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Refresher courses</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Q&A sessions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       
-      <!-- Book Free Trial Section -->
-      <div class="mt-12 text-center bg-accent p-8 rounded">
-        <h2 class="text-3xl md:text-4xl mb-4">BOOK A FREE TRIAL</h2>
-        <p class="text-lg mb-6">
-          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
-          There are separate memberships for adults, students, and children.
+      <div class="bg-gradient-to-r from-accent to-gray-50 p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-heading uppercase mb-6 text-center">Professional Training Categories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">👮</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Law Enforcement</h3>
+            <p class="text-gray-700 text-sm">
+              Police officers and law enforcement professionals requiring specialized defensive tactics.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">🚪</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Security Personnel</h3>
+            <p class="text-gray-700 text-sm">
+              Security officers needing practical skills for crowd control and threat management.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">🏥</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Healthcare Workers</h3>
+            <p class="text-gray-700 text-sm">
+              Nurses and medical staff dealing with aggressive patients or workplace violence.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">⛏️</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Industrial Workers</h3>
+            <p class="text-gray-700 text-sm">
+              Mine site controllers and industrial workers in high-risk environments.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">📰</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Media & Journalists</h3>
+            <p class="text-gray-700 text-sm">
+              Reporters and media professionals working in potentially dangerous situations.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">🏢</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Corporate Groups</h3>
+            <p class="text-gray-700 text-sm">
+              Organizations seeking specialized training for employee safety and security.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">👤</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Individual Needs</h3>
+            <p class="text-gray-700 text-sm">
+              Customized training for individuals with specific professional requirements.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">🔄</span>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Refresher Training</h3>
+            <p class="text-gray-700 text-sm">
+              Update and refresh existing skills for professionals returning to practice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="mt-12 text-center bg-gradient-to-r from-primary to-primary-hover p-8 rounded-lg text-white">
+        <h2 class="text-3xl md:text-4xl mb-4">ELEVATE YOUR PROFESSIONAL SKILLS</h2>
+        <p class="text-lg mb-6 opacity-90">
+          Get specialized training tailored to your professional needs. Whether you're starting fresh or need a refresher, 
+          we'll help you achieve your specific training objectives.
         </p>
-        <Button href="/free-trial">Free Trial</Button>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button href="/contact" class="bg-white text-primary hover:bg-gray-100">Discuss Your Needs</Button>
+          <a href="/free-trial" class="text-white hover:text-gray-200 underline">Try a Session</a>
+        </div>
       </div>
     </div>
   </section>

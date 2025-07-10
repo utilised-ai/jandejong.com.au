@@ -12,67 +12,236 @@ import Hero from '../components/Hero.astro';
   />
   
   <section class="section-padding">
-    <div class="container-width max-w-4xl">
-      <div class="prose prose-lg mx-auto">
-        <h2>Aikido Perth</h2>
+    <div class="container-width max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+        <div class="lg:col-span-2">
+          <div class="card bg-base-100 shadow-lg">
+            <div class="card-body">
+              <div class="flex items-center mb-6">
+                <div class="avatar">
+                  <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">和</span>
+                  </div>
+                </div>
+                <div class="ml-4">
+                  <h1 class="text-3xl font-heading uppercase mb-2">Aikido Perth</h1>
+                  <p class="text-gray-600">The Way of Harmony</p>
+                </div>
+              </div>
+              
+              <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-heading uppercase mb-4">Discover Aikido, a Modern Japanese Martial Art</h2>
+                <p class="text-gray-700 leading-relaxed">
+                  Immerse yourself in the 'way of harmony' with Aikido, a modern Japanese martial art, right here in Perth, Western Australia at Jan de Jong Martial Arts & Fitness. Aikido, an unarmed method of self-defence, was established in Japan in 1942 by Morihei Ueshiba. It's founded on the principles of harmony and non-resistance, allowing you to take control of an attacker's force or momentum, rather than stopping it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <h1>Take Aikido Classes in Perth</h1>
-        
-        <h2>Discover Aikido, a Modern Japanese Martial Art in Perth</h2>
-        <p>
-          Immerse yourself in the 'way of harmony' with Aikido, a modern Japanese martial art, right here in Perth, Western Australia at Jan de Jong Martial Arts & Fitness. Aikido, an unarmed method of self-defence, was established in Japan in 1942 by Morihei Ueshiba. It's founded on the principles of harmony and non-resistance, allowing you to take control of an attacker's force or momentum, rather than stopping it.
-        </p>
-        
-        <h2>The Power of 'Ki' in Aikido</h2>
-        <p>
-          This martial art doesn't rely on physical strength, but on balance, leverage, skill, and the application of 'ki' or life force. The term 'ki' is often used by martial artists and is the Japanese equivalent of 'Chi' in China or 'Prana' in India. In Western cultures, we might refer to it as 'focused mental thought' or an extension of our thought process. It's present in all things and is also referred to as 'life force'. When understood, this concept explains why you don't need to be physically stronger than your opponent to master Aikido.
-        </p>
-        
-        <h2>Aikido Classes in Perth</h2>
-        <p>
-          Our <strong>Aikido classes in Perth</strong> combine practical self-defence movements derived from <a href="/ju-jutsu">Ju Jutsu</a>, spear and <a href="/sword-training">sword fighting</a>, Aikijutsu, and other martial arts forms. The emphasis is on harmonising with the attacker's force. Aikido has gained immense popularity due to its highly ethical and moral nature, as it is fundamentally a non-violent self-defence system.
-        </p>
-        
-        <h2>The Effectiveness of Aikido</h2>
-        <p>
-          While Aikido is often considered a softer martial art and the gentlemen's fighting art, it is undeniably an effective form of self-defence. Jan de Jong studied Yoseikan Aikido in Japan under Mochizuki Sensei, a direct student of Aikido's founder, Morihei Ueshiba.
-        </p>
-        
-        <h2>Aikido at Jan de Jong Martial Arts Fitness</h2>
-        <p>
-          At Jan de Jong Martial Arts Fitness, our Aikido classes in Perth focus on the smooth, flowing, and circular movements that are typical of Aikido, but with a very dynamic and practical application. We don't limit ourselves to the downward strike and hand grips, as found in some practices. Instead, we recognise the need to offer solutions against more common attacks such as punches, kicks, and weapons. We are proud to offer a balance that recognises measured and reasonable responses to any given situation.
-        </p>
-        
-        <h2>Experience Aikido in Perth</h2>
-        <p>
-          Experience the power of Aikido in Perth at Jan de Jong Martial Arts Fitness. Our classes provide a unique blend of traditional techniques and practical applications, making us a leading choice for Aikido training in Perth. Our dojo welcomes adults of all fitness levels, and our experienced instructors are dedicated to teaching you the techniques of this traditional Japanese martial art.
-        </p>
-        
-        <h2>Frequently Asked Questions about Aikido in Perth</h2>
-        
-        <h3>What is Aikido?</h3>
-        <p>Aikido is a Japanese martial art that focuses on harmony and non-resistance to an attacker's force. It combines movements from various martial arts forms and emphasises balance, leverage, and the application of 'ki' or life force.</p>
-        
-        <h3>Is Aikido suitable for beginners?</h3>
-        <p>Yes, Aikido is suitable for individuals of all fitness levels and martial arts experience. At Jan de Jong Martial Arts Fitness, we offer classes that cater to both beginners and experienced practitioners.</p>
-        
-        <h3>How does Aikido differ from other martial arts?</h3>
-        <p>Unlike many martial arts that rely on physical strength and power, Aikido focuses on using an attacker's force against them. It's often considered a softer martial art, but it's an effective form of self-defence.</p>
-        
-        <h3>What can I expect from an Aikido class at Jan de Jong Martial Arts Fitness in Perth?</h3>
-        <p>Our Aikido classes in Perth focus on smooth, flowing, and circular movements typical of Aikido, with a very dynamic and practical application. We also teach how to defend against common attacks such as punches, kicks, and weapons.</p>
-        
-        <h3>How can I get started with Aikido in Perth at Jan de Jong Martial Arts Fitness?</h3>
-        <p>You can get started by contacting us to inquire about our class schedules and enrolment process. We look forward to welcoming you to our Aikido community in Perth.</p>
+        <div class="space-y-6">
+          <div class="card bg-gradient-to-br from-primary to-primary-hover text-white">
+            <div class="card-body">
+              <h3 class="text-xl font-heading uppercase mb-4">Quick Facts</h3>
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <span class="mr-3">🏛️</span>
+                <span>Founded: 1942 by Morihei Ueshiba</span>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-3">☯️</span>
+                <span>Principle: Harmony & Non-resistance</span>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-3">🎯</span>
+                <span>Focus: Redirecting Force</span>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-3">🧘</span>
+                <span>Emphasizes: Ki (Life Force)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card bg-accent">
+            <div class="card-body">
+              <h3 class="text-xl font-heading uppercase mb-4">What You'll Learn</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Smooth, flowing movements</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Balance & leverage techniques</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Ki (life force) application</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Defense against modern attacks</span>
+              </li>
+              <li class="flex items-start">
+                <span class="mr-2 text-primary">✓</span>
+                <span>Non-violent conflict resolution</span>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
       </div>
       
-      <div class="mt-12 text-center bg-accent p-8 rounded">
-        <h2 class="text-3xl md:text-4xl mb-4">Book a Free Trial</h2>
-        <p class="text-lg mb-6">
-          Memberships are purchased online or in the dojo as either pre-paid or subscription options. 
-          There are separate memberships for adults, students, and children.
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <h2 class="text-2xl font-heading uppercase mb-4 flex items-center">
+              <div class="avatar">
+                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                  <span class="text-white font-bold text-sm">気</span>
+                </div>
+              </div>
+              <span class="ml-3">
+The Power of 'Ki'
+              </span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              This martial art doesn't rely on physical strength, but on balance, leverage, skill, and the application of 'ki' or life force. The term 'ki' is the Japanese equivalent of 'Chi' in China or 'Prana' in India.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              In Western cultures, we might refer to it as 'focused mental thought' or an extension of our thought process. When understood, this concept explains why you don't need to be physically stronger than your opponent to master Aikido.
+            </p>
+          </div>
+        </div>
+        
+        <div class="card bg-base-100 shadow-lg">
+          <div class="card-body">
+            <h2 class="text-2xl font-heading uppercase mb-4 flex items-center">
+              <div class="avatar">
+                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                  <span class="text-white font-bold text-sm">技</span>
+                </div>
+              </div>
+              <span class="ml-3">
+Our Aikido Training
+              </span>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Our <strong>Aikido classes in Perth</strong> combine practical self-defence movements derived from <a href="/ju-jutsu" class="text-primary hover:underline">Ju Jutsu</a>, spear and <a href="/sword-training" class="text-primary hover:underline">sword fighting</a>, Aikijutsu, and other martial arts forms.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              The emphasis is on harmonising with the attacker's force. Aikido has gained immense popularity due to its highly ethical and moral nature, as it is fundamentally a non-violent self-defence system.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-gradient-to-r from-accent to-gray-50 p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-heading uppercase mb-6 text-center">Our Aikido Approach</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="avatar mx-auto mb-4">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-xl">伝</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Traditional Foundation</h3>
+            <p class="text-gray-700 text-sm">
+              Jan de Jong studied Yoseikan Aikido in Japan under Mochizuki Sensei, a direct student of Aikido's founder, Morihei Ueshiba.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="avatar mx-auto mb-4">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-xl">実</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Practical Application</h3>
+            <p class="text-gray-700 text-sm">
+              We focus on dynamic and practical applications, offering solutions against common attacks such as punches, kicks, and weapons.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="avatar mx-auto mb-4">
+              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-xl">和</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-heading uppercase mb-3">Measured Response</h3>
+            <p class="text-gray-700 text-sm">
+              We teach balanced approaches that recognize measured and reasonable responses to any given situation.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card bg-base-100 shadow-lg mb-12">
+        <div class="card-body">
+          <h2 class="text-2xl font-heading uppercase mb-8 text-center flex items-center justify-center">
+            <div class="avatar mr-3">
+              <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                <span class="text-white font-bold text-sm">?</span>
+              </div>
+            </div>
+Frequently Asked Questions
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-lg font-heading uppercase mb-2">What is Aikido?</h3>
+                <p class="text-gray-700">Aikido is a Japanese martial art that focuses on harmony and non-resistance to an attacker's force. It combines movements from various martial arts forms and emphasises balance, leverage, and the application of 'ki' or life force.</p>
+              </div>
+              
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-lg font-heading uppercase mb-2">Is Aikido suitable for beginners?</h3>
+                <p class="text-gray-700">Yes, Aikido is suitable for individuals of all fitness levels and martial arts experience. We offer classes that cater to both beginners and experienced practitioners.</p>
+              </div>
+              
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-lg font-heading uppercase mb-2">How does Aikido differ from other martial arts?</h3>
+                <p class="text-gray-700">Unlike many martial arts that rely on physical strength and power, Aikido focuses on using an attacker's force against them. It's often considered a softer martial art, but it's an effective form of self-defence.</p>
+              </div>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-lg font-heading uppercase mb-2">What can I expect from an Aikido class?</h3>
+                <p class="text-gray-700">Our Aikido classes focus on smooth, flowing, and circular movements typical of Aikido, with a very dynamic and practical application. We also teach how to defend against common attacks such as punches, kicks, and weapons.</p>
+              </div>
+              
+              <div class="border-l-4 border-primary pl-4">
+                <h3 class="text-lg font-heading uppercase mb-2">How can I get started?</h3>
+                <p class="text-gray-700">You can get started by contacting us to inquire about our class schedules and enrolment process. We look forward to welcoming you to our Aikido community in Perth.</p>
+              </div>
+              
+              <div class="card bg-accent">
+                <div class="card-body">
+                  <h3 class="text-lg font-heading uppercase mb-2">Related Training</h3>
+                  <p class="text-gray-700 mb-3">Explore our other traditional martial arts that complement Aikido training.</p>
+                  <div class="space-y-1">
+                    <a href="/ju-jutsu" class="text-primary hover:underline font-semibold block">Ju Jutsu Training →</a>
+                    <a href="/sword-training" class="text-primary hover:underline font-semibold block">Sword Training →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="mt-12 text-center bg-gradient-to-r from-primary to-primary-hover p-8 rounded-lg text-white">
+        <h2 class="text-3xl md:text-4xl mb-4">DISCOVER THE WAY OF HARMONY</h2>
+        <p class="text-lg mb-6 opacity-90">
+          Experience the gentle yet effective art of Aikido with a free trial class. 
+          Learn to redirect force and find balance in both martial arts and life.
         </p>
-        <Button href="/free-trial">Free Trial</Button>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button href="/free-trial" class="bg-white text-primary hover:bg-gray-100">Book Your Free Trial</Button>
+          <a href="/contact" class="text-white hover:text-gray-200 underline">Questions? Contact Us</a>
+        </div>
       </div>
     </div>
   </section>

@@ -1,0 +1,84 @@
+---
+export interface Props {
+  name: string;
+  title: string;
+  image: string;
+  experience: string;
+  specialties: string[];
+  bio: string;
+  credentials?: string[];
+}
+
+const { name, title, image, experience, specialties, bio, credentials = [] } = Astro.props;
+---
+
+<div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 group">
+  <figure class="relative overflow-hidden">
+    <img 
+      src={image} 
+      alt={name} 
+      class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+    >
+    <div class="absolute top-4 right-4">
+      <div class="badge badge-primary badge-lg">
+        {experience}
+      </div>
+    </div>
+  </figure>
+  
+  <div class="card-body">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="avatar">
+        <div class="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <img src={image} alt={name} />
+        </div>
+      </div>
+      <div>
+        <h3 class="card-title text-lg">{name}</h3>
+        <p class="text-sm text-base-content/70">{title}</p>
+      </div>
+    </div>
+    
+    <p class="text-base-content/80 mb-4">{bio}</p>
+    
+    <div class="mb-4">
+      <h4 class="font-semibold mb-2 flex items-center">
+        <span class="mr-2">🥋</span>
+        Specialties
+      </h4>
+      <div class="flex flex-wrap gap-2">
+        {specialties.map((specialty) => (
+          <div class="badge badge-outline badge-sm">{specialty}</div>
+        ))}
+      </div>
+    </div>
+    
+    {credentials.length > 0 && (
+      <div class="mb-4">
+        <h4 class="font-semibold mb-2 flex items-center">
+          <span class="mr-2">🏆</span>
+          Credentials
+        </h4>
+        <ul class="text-sm text-base-content/70 space-y-1">
+          {credentials.map((credential) => (
+            <li class="flex items-start">
+              <span class="mr-2 text-primary">•</span>
+              {credential}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+    
+    <div class="card-actions justify-between items-center">
+      <div class="rating rating-sm">
+        <input type="radio" name="rating-instructor" class="mask mask-star-2 bg-primary" disabled checked />
+        <input type="radio" name="rating-instructor" class="mask mask-star-2 bg-primary" disabled checked />
+        <input type="radio" name="rating-instructor" class="mask mask-star-2 bg-primary" disabled checked />
+        <input type="radio" name="rating-instructor" class="mask mask-star-2 bg-primary" disabled checked />
+        <input type="radio" name="rating-instructor" class="mask mask-star-2 bg-primary" disabled checked />
+      </div>
+      <button class="btn btn-primary btn-sm">Contact Instructor</button>
+    </div>
+  </div>
+</div>

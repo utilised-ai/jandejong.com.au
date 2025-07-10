@@ -45,52 +45,97 @@ const galleryImages = [
       <div class="mb-12">
         <h2 class="text-3xl md:text-4xl text-center mb-8">Age Groups & Programs</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white rounded shadow-card overflow-hidden">
-            <div class="bg-primary text-white p-4">
+          <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <div class="card-header bg-gradient-to-r from-primary to-primary-hover text-white p-4">
               <h3 class="text-xl font-heading uppercase">Little Samurai</h3>
-              <p class="text-sm">Ages 5-8</p>
+              <p class="text-sm opacity-90">Ages 5-8</p>
             </div>
-            <div class="p-6">
+            <div class="card-body">
               <ul class="space-y-2 mb-4">
-                <li>✓ Basic movements and coordination</li>
-                <li>✓ Following instructions and discipline</li>
-                <li>✓ Simple self-defense concepts</li>
-                <li>✓ Games and fun activities</li>
-                <li>✓ Respect and good manners</li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Basic movements and coordination</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Following instructions and discipline</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Simple self-defense concepts</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Games and fun activities</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Respect and good manners</span>
+                </li>
               </ul>
               <p class="text-sm text-gray-600">Focus on play-based learning and character development</p>
             </div>
           </div>
           
-          <div class="bg-white rounded shadow-card overflow-hidden">
-            <div class="bg-primary text-white p-4">
+          <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <div class="card-header bg-gradient-to-r from-primary to-primary-hover text-white p-4">
               <h3 class="text-xl font-heading uppercase">Youth Program</h3>
-              <p class="text-sm">Ages 9-15</p>
+              <p class="text-sm opacity-90">Ages 9-15</p>
             </div>
-            <div class="p-6">
+            <div class="card-body">
               <ul class="space-y-2 mb-4">
-                <li>✓ Structured martial arts techniques</li>
-                <li>✓ Anti-bullying strategies</li>
-                <li>✓ Physical fitness and coordination</li>
-                <li>✓ Goal setting and achievement</li>
-                <li>✓ Leadership development</li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Structured martial arts techniques</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Anti-bullying strategies</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Physical fitness and coordination</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Goal setting and achievement</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Leadership development</span>
+                </li>
               </ul>
               <p class="text-sm text-gray-600">More structured training with real-world applications</p>
             </div>
           </div>
           
-          <div class="bg-white rounded shadow-card overflow-hidden">
-            <div class="bg-primary text-white p-4">
+          <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <div class="card-header bg-gradient-to-r from-primary to-primary-hover text-white p-4">
               <h3 class="text-xl font-heading uppercase">Teen Program</h3>
-              <p class="text-sm">Ages 16-17</p>
+              <p class="text-sm opacity-90">Ages 16-17</p>
             </div>
-            <div class="p-6">
+            <div class="card-body">
               <ul class="space-y-2 mb-4">
-                <li>✓ Advanced self-defense skills</li>
-                <li>✓ Confidence in challenging situations</li>
-                <li>✓ Transition to adult classes</li>
-                <li>✓ Leadership and mentoring roles</li>
-                <li>✓ Life skills integration</li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Advanced self-defense skills</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Confidence in challenging situations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Transition to adult classes</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Leadership and mentoring roles</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2 text-primary">✓</span>
+                  <span>Life skills integration</span>
+                </li>
               </ul>
               <p class="text-sm text-gray-600">Bridge to adult training with age-appropriate focus</p>
             </div>
@@ -102,57 +147,73 @@ const galleryImages = [
         <h2 class="text-3xl md:text-4xl text-center mb-8">Benefits for Children</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">💪</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">💪</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Physical Fitness</h3>
             <p>Improve strength, flexibility, coordination, and overall physical health</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">🛡️</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">🛡️</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Self-Defense</h3>
             <p>Learn practical skills to protect themselves and handle challenging situations</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">🧠</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">🧠</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Mental Focus</h3>
             <p>Develop concentration, discipline, and the ability to follow instructions</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">😊</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">😊</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Confidence</h3>
             <p>Build self-esteem and confidence through achievement and skill development</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">🤝</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">🤝</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Social Skills</h3>
             <p>Learn teamwork, respect for others, and how to make positive friendships</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">📚</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">📚</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Academic Performance</h3>
             <p>Improved focus and discipline often translates to better school performance</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">🎯</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">🎯</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Goal Setting</h3>
             <p>Learn to set goals and work systematically toward achieving them</p>
           </div>
           <div class="text-center">
-            <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl">🏆</span>
+            <div class="avatar mx-auto mb-4">
+              <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center">
+                <span class="text-2xl">🏆</span>
+              </div>
             </div>
             <h3 class="text-xl font-heading uppercase mb-2">Character Building</h3>
             <p>Develop integrity, perseverance, and respect for themselves and others</p>
@@ -202,27 +263,33 @@ const galleryImages = [
         <div>
           <h2 class="text-3xl md:text-4xl mb-6">Parent Testimonials</h2>
           <div class="space-y-4">
-            <div class="bg-accent p-4 rounded">
-              <p class="text-sm italic mb-2">
-                "My son has been training for 5 years and it has been incredibly positive. 
-                Sensei Maggie is amazing with children and has helped him develop confidence, 
-                discipline, and respect."
-              </p>
-              <p class="text-sm font-semibold">- Lil P., Parent</p>
+            <div class="card bg-accent">
+              <div class="card-body">
+                <p class="text-sm italic mb-2">
+                  "My son has been training for 5 years and it has been incredibly positive. 
+                  Sensei Maggie is amazing with children and has helped him develop confidence, 
+                  discipline, and respect."
+                </p>
+                <p class="text-sm font-semibold">- Lil P., Parent</p>
+              </div>
             </div>
-            <div class="bg-accent p-4 rounded">
-              <p class="text-sm italic mb-2">
-                "The dojo has a family feel that is very warm and welcoming. 
-                My boys have learned valuable life skills that will prepare them for their future."
-              </p>
-              <p class="text-sm font-semibold">- Parent of Two Students</p>
+            <div class="card bg-accent">
+              <div class="card-body">
+                <p class="text-sm italic mb-2">
+                  "The dojo has a family feel that is very warm and welcoming. 
+                  My boys have learned valuable life skills that will prepare them for their future."
+                </p>
+                <p class="text-sm font-semibold">- Parent of Two Students</p>
+              </div>
             </div>
-            <div class="bg-accent p-4 rounded">
-              <p class="text-sm italic mb-2">
-                "Our son, who is on the spectrum, has thrived under Maggie's instruction. 
-                He's learned to focus, follow instructions, and gained incredible confidence."
-              </p>
-              <p class="text-sm font-semibold">- Ari and Adolfo Chavez</p>
+            <div class="card bg-accent">
+              <div class="card-body">
+                <p class="text-sm italic mb-2">
+                  "Our son, who is on the spectrum, has thrived under Maggie's instruction. 
+                  He's learned to focus, follow instructions, and gained incredible confidence."
+                </p>
+                <p class="text-sm font-semibold">- Ari and Adolfo Chavez</p>
+              </div>
             </div>
           </div>
         </div>
@@ -233,16 +300,16 @@ const galleryImages = [
         <ImageGallery images={galleryImages} />
       </div>
       
-      <div class="text-center bg-accent p-8 rounded">
-        <h2 class="text-3xl md:text-4xl mb-4">Give Your Child the Gift of Martial Arts</h2>
-        <p class="text-lg mb-6">
+      <div class="text-center bg-gradient-to-r from-primary to-primary-hover p-8 rounded-lg text-white">
+        <h2 class="text-3xl md:text-4xl mb-4">GIVE YOUR CHILD THE GIFT OF MARTIAL ARTS</h2>
+        <p class="text-lg mb-6 opacity-90">
           Help your child develop confidence, discipline, and life skills that will benefit 
           them throughout their life. Our experienced instructors create a fun, safe, 
           and supportive learning environment.
         </p>
-        <div class="flex gap-4 justify-center">
-          <Button href="/free-trial">Book Free Trial</Button>
-          <Button href="/contact" type="secondary">Ask Questions</Button>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button href="/free-trial" class="bg-white text-primary hover:bg-gray-100">Book Free Trial</Button>
+          <a href="/contact" class="text-white hover:text-gray-200 underline">Ask Questions</a>
         </div>
       </div>
     </div>
