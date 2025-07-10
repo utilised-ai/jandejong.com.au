@@ -1,0 +1,66 @@
+---
+import { siteConfig } from '../config/site.js';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  primaryButton?: {
+    text: string;
+    link: string;
+  };
+  secondaryButton?: {
+    text: string;
+    link: string;
+  };
+  backgroundColor?: string;
+}
+
+const { 
+  title = siteConfig.cta.primary.action,
+  subtitle = siteConfig.cta.primary.text,
+  description = siteConfig.cta.primary.description,
+  primaryButton = {
+    text: siteConfig.cta.primary.buttonText,
+    link: siteConfig.cta.primary.buttonLink
+  },
+  secondaryButton,
+  backgroundColor = 'bg-gray-900'
+} = Astro.props;
+---
+
+<section class={`py-16 px-4 ${backgroundColor}`}>
+  <div class="container mx-auto max-w-4xl text-center text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      {title}
+    </h2>
+    {subtitle && (
+      <p class="text-xl md:text-2xl mb-4 text-gray-300">
+        {subtitle}
+      </p>
+    )}
+    {description && (
+      <p class="text-lg mb-8 text-gray-400 max-w-2xl mx-auto">
+        {description}
+      </p>
+    )}
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href={primaryButton.link}
+        class="inline-block bg-red-600 text-white px-8 py-4 rounded font-bold text-lg hover:bg-red-700 transition-colors duration-300"
+      >
+        {primaryButton.text}
+      </a>
+      
+      {secondaryButton && (
+        <a 
+          href={secondaryButton.link}
+          class="inline-block border-2 border-white text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-gray-900 transition-colors duration-300"
+        >
+          {secondaryButton.text}
+        </a>
+      )}
+    </div>
+  </div>
+</section>

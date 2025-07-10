@@ -1,18 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="Free Trial - Jan de Jong Martial Arts Fitness Perth | Book Your Trial Class" description="Book your free trial class at Jan de Jong Martial Arts Fitness Perth. Discover martial arts with expert instructors. No commitment required. All ages and abilities welcome.">
-  <section class="relative h-[500px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/membership-img-1.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Free Trial</h1>
-      <h2 class="text-2xl md:text-3xl mb-6 drop-shadow-lg">Discover the Art of Self-Defense with a Free Trial Class</h2>
-      <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Embark on a journey to master martial arts and uncover a world of discipline, confidence, and self-improvement</p>
-      <Button href="#free-trial" size="large">Book Now</Button>
-    </div>
-  </section>
+  <Hero 
+    title="Free Trial" 
+    subtitle="Discover the Art of Self-Defense with a Free Trial Class"
+    backgroundImage="/images/membership-img-1.png"
+    height="h-[500px]"
+    ctaText="Book Now"
+    ctaLink="#free-trial"
+    showCta={true}
+  />
   
   <section class="section-padding">
     <div class="container-width">

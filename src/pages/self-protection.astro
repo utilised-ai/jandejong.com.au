@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="Self Protection - Jan de Jong Martial Arts Fitness Perth | Self Protection for Men & Women" description="Self Protection courses for men & women at Jan de Jong Martial Arts Fitness Perth. 6-week program covering threat assessment, awareness & self defence techniques."
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/self-protection-img.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Self Protection</h1>
-    </div>
-  </section>
+<BaseLayout title="Self Protection - Jan de Jong Martial Arts Fitness Perth | Self Protection for Men & Women" description="Self Protection courses for men & women at Jan de Jong Martial Arts Fitness Perth. 6-week program covering threat assessment, awareness & self defence techniques.">
+  <Hero 
+    title="Self Protection" 
+    backgroundImage="/images/self-protection-img.png"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width max-w-4xl">

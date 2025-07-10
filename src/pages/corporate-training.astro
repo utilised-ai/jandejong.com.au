@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="Corporate Training - Jan de Jong Martial Arts Fitness Perth | Corporate Self Defence & Personal Safety" description="Corporate Training at Jan de Jong Martial Arts Fitness Perth. In-house or on-premises self defence seminars, team building, employee wellness programs."
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/corporate-training-img.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Corporate Training</h1>
-    </div>
-  </section>
+<BaseLayout title="Corporate Training - Jan de Jong Martial Arts Fitness Perth | Corporate Self Defence & Personal Safety" description="Corporate Training at Jan de Jong Martial Arts Fitness Perth. In-house or on-premises self defence seminars, team building, employee wellness programs.">
+  <Hero 
+    title="Corporate Training" 
+    backgroundImage="/images/corporate-training-img.png"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width max-w-4xl">

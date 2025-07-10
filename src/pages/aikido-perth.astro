@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="Aikido Perth - Take Aikido Classes in Perth | Jan de Jong Martial Arts" description="Discover Aikido classes in Perth at Jan de Jong Martial Arts Fitness. Learn this modern Japanese martial art focusing on harmony and practical self-defence. Book your free trial today.">
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/aikido-img.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Aikido</h1>
-    </div>
-  </section>
+  <Hero 
+    title="Aikido" 
+    backgroundImage="/images/aikido-img.png"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width max-w-4xl">

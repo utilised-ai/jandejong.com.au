@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="Timetable - Jan de Jong Martial Arts Fitness Perth | Class Schedule & Booking" description="View class timetable and book sessions at Jan de Jong Martial Arts Fitness Perth. Live schedule with real-time availability. Book Ju Jutsu, Aikido, Tai Chi classes online.">
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/timetable-hero.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Timetable</h1>
-    </div>
-  </section>
+  <Hero 
+    title="Timetable" 
+    backgroundImage="/images/timetable-hero.jpg"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width">

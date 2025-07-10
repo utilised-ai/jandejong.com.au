@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="Martial Arts Classes Perth - Ju Jutsu, Aikido, Tai Chi | Jan de Jong Martial Arts" description="Explore our martial arts classes in Perth. Ju Jutsu, Aikido, Tai Chi, Self Defence, Weapons Training. Expert instruction since 1952. Classes for all ages and abilities.">
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/classes-hero.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Classes</h1>
-    </div>
-  </section>
+  <Hero 
+    title="Classes" 
+    backgroundImage="/images/classes-hero.jpg"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width">

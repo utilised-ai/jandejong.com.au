@@ -1,4 +1,6 @@
 ---
+import { siteConfig } from '../config/site.js';
+
 const navItems = [
   { label: 'Home', href: '/' },
   { 
@@ -35,11 +37,11 @@ const navItems = [
 ---
 
 <header class="sticky top-0 z-50 bg-white shadow-md">
-  <div class="bg-primary text-white py-2">
+  <div class="bg-red-600 text-white py-2">
     <div class="container-width flex justify-between text-sm">
       <div class="flex gap-4">
-        <a href="tel:0427970481" class="hover:underline">0427970481</a>
-        <a href="mailto:info@jandejong.com.au" class="hover:underline">info@jandejong.com.au</a>
+        <a href={`tel:${siteConfig.contact.phone}`} class="hover:underline">{siteConfig.contact.phone}</a>
+        <a href={`mailto:${siteConfig.contact.email}`} class="hover:underline">{siteConfig.contact.email}</a>
       </div>
       <div class="flex gap-4">
         <a href="/become-a-member" class="hover:underline">Become a Member</a>
@@ -59,7 +61,7 @@ const navItems = [
           <li class="relative group">
             <a 
               href={item.href} 
-              class="text-secondary font-semibold hover:text-primary relative flex items-center gap-1"
+              class="text-gray-700 font-semibold hover:text-red-600 relative flex items-center gap-1"
             >
               {item.label}
               {item.dropdown && (
@@ -67,7 +69,7 @@ const navItems = [
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               )}
-              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all group-hover:w-full"></span>
             </a>
             {item.dropdown && (
               <div class="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -75,7 +77,7 @@ const navItems = [
                   {item.dropdown.map((dropdownItem) => (
                     <a 
                       href={dropdownItem.href}
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-600 hover:text-white transition-colors"
                     >
                       {dropdownItem.label}
                     </a>
@@ -87,7 +89,7 @@ const navItems = [
         ))}
       </ul>
       
-      <a href="/free-trial" class="hidden md:block bg-primary text-white px-6 py-3 rounded font-bold hover:bg-primary-hover transition">
+      <a href="/free-trial" class="hidden md:block bg-red-600 text-white px-6 py-3 rounded font-bold hover:bg-red-700 transition-colors duration-300">
         FREE TRIAL
       </a>
       

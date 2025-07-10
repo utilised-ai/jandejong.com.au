@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="Privacy Policy - Jan de Jong Martial Arts Fitness Perth | Website Terms & Conditions" description="Privacy Policy and Terms & Conditions for Jan de Jong Martial Arts Fitness Perth. Website usage terms, copyright information and disclaimers.">
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/disclaimer-privacy-img.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">Privacy</h1>
-    </div>
-  </section>
+  <Hero 
+    title="Privacy" 
+    backgroundImage="/images/disclaimer-privacy-img.png"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width max-w-4xl">

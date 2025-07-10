@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <BaseLayout title="Ju Jutsu Perth - Traditional Ju Jutsu Classes | Jan de Jong Martial Arts" description="Learn traditional Ju Jutsu in Perth at Jan de Jong Martial Arts. Ancient Japanese self-defence art used by Samurai. Classes for adults and children. Book your free trial today.">
-  <section class="relative h-[400px] flex items-center justify-center bg-cover bg-center" style="background-image: url('/images/jujutsu-img.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-heading uppercase mb-4 drop-shadow-lg">JU JUTSU</h1>
-    </div>
-  </section>
+  <Hero 
+    title="JU JUTSU" 
+    backgroundImage="/images/jujutsu-img.png"
+    showCta={false}
+  />
   
   <section class="section-padding">
     <div class="container-width max-w-4xl">
