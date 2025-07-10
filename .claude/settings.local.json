@@ -9,7 +9,8 @@
       "mcp__mcp-server-firecrawl__firecrawl_scrape",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(node:*)"
     ],
     "deny": []
   }
